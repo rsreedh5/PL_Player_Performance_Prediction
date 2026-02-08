@@ -2,109 +2,134 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import OneHotEncoder, StandardScaler, LabelEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from data_generator import get_data
 
 # Set visual style
 sns.set_theme(style="whitegrid")
 
+def categorize_performance(g_a_per_90):
+    if g_a_per_90 >= 0.55: return "Star"
+    if g_a_per_90 >= 0.30: return "Effective"
+    return "Flop"
+
 def main():
-    print("Loading Data...")
+    print("Loading Enhanced Data...")
     df = get_data()
     
-    # 1. Exploratory Analysis
-    print("\n--- Data Overview ---")
-    print(df.groupby("Origin_League")[["Pre_PL_G_A_per_90", "PL_G_A_per_90"]].mean().sort_values("PL_G_A_per_90", ascending=False))
-
-    # Calculate "Transfer Tax" (Percentage of output retained)
-    df["Retention_Rate"] = df["PL_G_A_per_90"] / df["Pre_PL_G_A_per_90"]
+    # --- 1. Target Engineering ---
+    # We are now predicting a CLASS, not a number.
+    df["Verdict"] = df["PL_G_A_per_90"].apply(categorize_performance)
     
-    plt.figure(figsize=(12, 6))
-    sns.boxplot(x="Origin_League", y="Retention_Rate", data=df)
-    plt.title("Performance Retention by Origin League (1.0 = Same Output)")
-    plt.axhline(1.0, color='r', linestyle='--')
-    plt.savefig("retention_by_league.png")
-    print("\nPlot saved: retention_by_league.png")
+    print("\n--- Class Distribution ---")
+    print(df["Verdict"].value_counts(normalize=True))
 
-    plt.figure(figsize=(10, 6))
-    sns.scatterplot(x="Transfer_Fee_M", y="PL_G_A_per_90", hue="Origin_League", data=df, alpha=0.7)
-    plt.title("Transfer Fee vs. PL Success")
-    plt.savefig("fee_vs_success.png")
-    print("Plot saved: fee_vs_success.png")
-
-    # 2. Predictive Modeling
-    print("\n--- Training Prediction Model ---")
+    # --- 2. Feature Engineering ---
+    # Calculate the 'Delta' that ChatGPT suggested, but for analysis, not direct training target
+    # (Since we are doing classification, we keep raw features but the model will find the delta patterns)
     
-    X = df[["Origin_League", "Age", "Transfer_Fee_M", "Pre_PL_G_A_per_90"]]
-    y = df["PL_G_A_per_90"]
+    X = df[["Origin_League", "Age", "Transfer_Fee_M", "Pre_PL_G_A_per_90", "Buying_Club_Tier"]]
+    y = df["Verdict"]
 
-    # Preprocessing: OneHotEncode League
+    # --- 3. Pipeline Setup ---
+    # Categorical: League, Club Tier
+    # Numerical: Age, Fee, Pre-Stats
+    
+    categorical_features = ["Origin_League", "Buying_Club_Tier"]
+    numerical_features = ["Age", "Transfer_Fee_M", "Pre_PL_G_A_per_90"]
+
     preprocessor = ColumnTransformer(
         transformers=[
-            ('cat', OneHotEncoder(handle_unknown='ignore'), ['Origin_League'])
-        ],
-        remainder='passthrough'
+            ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_features),
+            ('num', StandardScaler(), numerical_features)
+        ]
     )
 
-    model = Pipeline(steps=[
+    # Random Forest Classifier
+    clf = Pipeline(steps=[
         ('preprocessor', preprocessor),
-        ('regressor', RandomForestRegressor(n_estimators=100, random_state=42))
+        ('classifier', RandomForestClassifier(n_estimators=200, max_depth=10, random_state=42))
     ])
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    model.fit(X_train, y_train)
-
-    y_pred = model.predict(X_test)
-    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-    r2 = r2_score(y_test, y_pred)
+    # --- 4. Cross-Validation (Robustness Check) ---
+    print("\n--- Running 5-Fold Cross-Validation ---")
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    cv_scores = cross_val_score(clf, X, y, cv=cv, scoring='accuracy')
     
-    print(f"Model Performance -> RMSE: {rmse:.3f}, R2: {r2:.3f}")
+    print(f"CV Accuracy Scores: {cv_scores}")
+    print(f"Mean Accuracy: {cv_scores.mean():.3f} (+/- {cv_scores.std() * 2:.3f})")
 
-    # 3. Specific Player Analysis
-    print("\n--- Specific Player Analysis (Actual vs Predicted) ---")
+    # --- 5. Training Final Model ---
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+    clf.fit(X_train, y_train)
+
+    # --- 6. Evaluation ---
+    y_pred = clf.predict(X_test)
+    print("\n--- Test Set Evaluation ---")
+    print(classification_report(y_test, y_pred))
     
-    # Filter for our named real players (excluding synthetic 'Player_XXXX')
-    real_players_df = df[~df["Name"].str.startswith("Player_")]
+    # Feature Importance
+    print("\n--- Feature Importance ---")
+    feature_names = (clf.named_steps['preprocessor']
+                     .transformers_[0][1]
+                     .get_feature_names_out(categorical_features).tolist() + numerical_features)
     
-    # Predict for them
-    real_X = real_players_df[["Origin_League", "Age", "Transfer_Fee_M", "Pre_PL_G_A_per_90"]]
-    real_players_df = real_players_df.copy() # Avoid SettingWithCopyWarning
-    real_players_df["Predicted_PL_G_A"] = model.predict(real_X)
-    real_players_df["Difference"] = real_players_df["PL_G_A_per_90"] - real_players_df["Predicted_PL_G_A"]
+    importances = clf.named_steps['classifier'].feature_importances_
+    feat_imp = pd.DataFrame({"Feature": feature_names, "Importance": importances})
+    print(feat_imp.sort_values("Importance", ascending=False).head(10))
+
+    # --- 7. Real Player Analysis ---
+    print("\n--- Real World Predictions ---")
+    real_players_df = df[~df["Name"].str.startswith("Player_")].copy()
     
-    # Define "Effectiveness" categories
-    def categorize(row):
-        if row["PL_G_A_per_90"] > 0.6: return "Star"
-        if row["PL_G_A_per_90"] > 0.4: return "Effective"
-        return "Flop/Struggle"
+    # Predict probabilities for nuance
+    real_X = real_players_df[X.columns]
+    predicted_classes = clf.predict(real_X)
+    predicted_probs = clf.predict_proba(real_X)
+    
+    real_players_df["Predicted_Verdict"] = predicted_classes
+    
+    # Get probability of being a Star
+    star_idx = list(clf.classes_).index("Star")
+    real_players_df["Star_Prob"] = predicted_probs[:, star_idx]
+    
+    cols = ["Name", "Origin_League", "Buying_Club_Tier", "Pre_PL_G_A_per_90", "PL_G_A_per_90", "Predicted_Verdict", "Verdict"]
+    display_df = real_players_df[cols].sort_values("PL_G_A_per_90", ascending=False)
+    
+    print(display_df.to_string(index=False))
 
-    real_players_df["Verdict"] = real_players_df.apply(categorize, axis=1)
+    # Save to CSV
+    display_df.to_csv("final_predictions.csv", index=False)
+    print("\nSaved detailed predictions to 'final_predictions.csv'")
 
-    # Display Table
-    cols_to_show = ["Name", "Origin_League", "Pre_PL_G_A_per_90", "PL_G_A_per_90", "Predicted_PL_G_A", "Verdict"]
-    print(real_players_df[cols_to_show].sort_values("PL_G_A_per_90", ascending=False).to_string(index=False))
-
-    # Plot Actual vs Predicted for known players
+    # --- 8. Visualizations ---
+    # Confusion Matrix
+    plt.figure(figsize=(8, 6))
+    cm = confusion_matrix(y_test, y_pred, labels=clf.classes_)
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=clf.classes_, yticklabels=clf.classes_)
+    plt.xlabel('Predicted')
+    plt.ylabel('Actual')
+    plt.title('Confusion Matrix: Player Success Classification')
+    plt.savefig("confusion_matrix.png")
+    
+    # Star Probability vs Actual
     plt.figure(figsize=(12, 8))
-    sns.scatterplot(x="Predicted_PL_G_A", y="PL_G_A_per_90", data=real_players_df, s=100, color='blue')
+    sns.scatterplot(data=real_players_df, x="Star_Prob", y="PL_G_A_per_90", hue="Verdict", style="Verdict", s=150, palette="deep")
     
-    # Add labels
     for i, row in real_players_df.iterrows():
-        plt.text(row["Predicted_PL_G_A"]+0.01, row["PL_G_A_per_90"]+0.01, row["Name"], fontsize=9)
+        plt.text(row["Star_Prob"]+0.01, row["PL_G_A_per_90"], row["Name"], fontsize=9)
         
-    # Perfect prediction line
-    plt.plot([0, 1.5], [0, 1.5], 'r--', label="Perfect Prediction")
-    plt.xlabel("Predicted G+A/90")
-    plt.ylabel("Actual G+A/90")
-    plt.title("Model Prediction vs Reality for Key Transfers")
-    plt.legend()
-    plt.savefig("prediction_vs_reality.png")
-    print("Plot saved: prediction_vs_reality.png")
+    plt.axvline(0.5, color='gray', linestyle='--')
+    plt.title("Model Confidence (Star Probability) vs. Reality")
+    plt.xlabel("Estimated Probability of being a 'Star'")
+    plt.ylabel("Actual PL G+A/90")
+    plt.savefig("star_probability_analysis.png")
+    print("Plots saved: confusion_matrix.png, star_probability_analysis.png")
 
 if __name__ == "__main__":
     main()
