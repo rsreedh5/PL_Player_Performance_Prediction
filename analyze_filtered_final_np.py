@@ -12,7 +12,7 @@ import os
 sns.set_theme(style="whitegrid")
 
 def main():
-    print("Training FINAL OPTIMIZED Model (No Shots, No Overperf)...")
+    print("Training FINAL OPTIMIZED Model (Target: Non-Penalty G+A)...")
     
     input_file = "Pl_transfers_20apps_enriched.csv"
     if not os.path.exists(input_file):
@@ -29,17 +29,20 @@ def main():
     
     # Cohort for Evaluation
     cohort = test_df_full[test_df_full['Pre_PL_G_A'] > 0.20].copy()
-    y_true = cohort["PL_Raw_GA"]
+    
+    # --- CHANGED TARGET TO NP GA ---
+    target = "PL_NP_GA" 
+    y_true = cohort[target]
 
-    # Final Feature Set (Double Optimized)
+    # Full Feature Set to Test
     base_features = [
         "Origin_League", "Pre_PL_G_A", "Pre_PL_npxG", 
         "Pre_PL_xA", "League_Quality_Score",
-        "Pre_PL_KeyPasses_p90",
+        "Pre_PL_KeyPasses_p90", "Pre_PL_Shots_p90",
+        "Finishing_Overperf",
         "Origin_League_Avg_xG_p90", "Origin_League_Avg_xA_p90",
         "Origin_League_Avg_Shots_p90", "Origin_League_Avg_KP_p90"
     ]
-    target = "PL_Raw_GA"
 
     # Helper to train
     def train_eval(feats):
@@ -85,7 +88,7 @@ def main():
     # 1. Baseline Run
     base_r2, base_rmse, base_imps = train_eval(base_features)
     
-    print(f"\n--- Baseline Performance (Proven Cohort) ---")
+    print(f"\n--- Baseline NP Performance (Proven Cohort) ---")
     print(f"R²: {base_r2:.3f}")
     print(f"RMSE: {base_rmse:.3f}")
 
@@ -119,14 +122,14 @@ def main():
     # Sort by R² desc (Higher R² when removed = Feature was Bad. Lower R² = Feature was Good)
     res_df = res_df.sort_values("R² (if removed)", ascending=True)
     
-    print("\n--- Feature Impact Report ---")
+    print("\n--- Feature Impact Report (Target: PL Non-Penalty G+A) ---")
     print("Interpretation: Low 'R² (if removed)' means the feature was CRITICAL.")
     print("High 'Tree Importance' means the model used it often for splits.\n")
     print(res_df.to_string(index=False))
     
     # Save table
-    res_df.to_csv("Variable_decision_analysis.csv", index=False)
-    print("\nSaved variable analysis to 'Variable_decision_analysis.csv'")
+    res_df.to_csv("Variable_decision_analysis_NP.csv", index=False)
+    print("\nSaved NP variable analysis to 'Variable_decision_analysis_NP.csv'")
 
 if __name__ == "__main__":
     main()
