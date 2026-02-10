@@ -1,0 +1,499 @@
+Name,Origin_League,G_A_per_90,npxG_per_90,Predicted_Verdict,PL_Success,Star_Prob
+Edinson Cavani,Ligue 1,0.76,1.3,Star,Star,0.92710054
+Guido Carrillo,Ligue 1,1.28,0.93,Star,Flop,0.91878974
+Zlatan Ibrahimovic,Ligue 1,1.8,0.84,Star,Star,0.91646105
+Pierre-Emerick Aubameyang,Bundesliga,1.07,0.91,Star,Star,0.91561776
+Pierre-Emerick Aubameyang,Bundesliga,1.01,0.86,Star,Star,0.9083805
+Álvaro Morata,La Liga,1.29,0.65,Star,Star,0.8354848
+Nicolas Jackson,La Liga,0.89,0.48,Star,Star,0.8066626
+Mohamed Salah,Serie A,0.94,0.48,Star,Star,0.7816487
+Alexandre Lacazette,Ligue 1,1.15,0.5,Star,Star,0.7724461
+Chicharito,La Liga,1.17,0.49,Star,Flop,0.7643175
+Dimitri Payet,Ligue 1,0.67,0.12,Star,Star,0.75555146
+Michy Batshuayi,Bundesliga,0.86,0.73,Star,Star,0.73797685
+Kamil Grosicki,Ligue 1,0.64,0.27,Star,Star,0.7316814
+Erling Haaland,Bundesliga,1.23,0.77,Star,Star,0.7116825
+Samir Nasri,La Liga,0.24,0.14,Star,Star,0.6971927
+Michy Batshuayi,La Liga,0.18,0.25,Star,Star,0.68718463
+Youri Tielemans,Ligue 1,0.06,0.07,Star,Star,0.6851775
+Alexander Isak,La Liga,0.68,0.59,Star,Star,0.6786484
+Modibo Maiga,Ligue 1,0.46,0.22,Star,Star,0.67282873
+Gareth Bale,La Liga,0.33,0.33,Star,Star,0.6606114
+Matheus Pereira,Ligue 1,0.0,0.13,Star,Star,0.6405192
+Ryan Babel,La Liga,0.81,0.2,Star,Star,0.63295496
+Raúl Jiménez,La Liga,0.48,0.44,Star,Star,0.6214793
+Rodrigo,La Liga,0.52,0.34,Star,Star,0.61305535
+Raphinha,Ligue 1,0.42,0.24,Star,Star,0.61058944
+Cengiz Ünder,Serie A,0.31,0.27,Star,Star,0.5834587
+Christian Pulisic,Bundesliga,0.79,0.51,Star,Star,0.580528
+Divock Origi,Ligue 1,0.46,0.29,Star,Star,0.56848603
+Enes Ünal,La Liga,0.51,0.21,Star,Star,0.53410673
+Michy Batshuayi,Ligue 1,0.8,0.52,Star,Star,0.51782405
+Divock Origi,Bundesliga,0.37,0.29,Star,Star,0.5175576
+Ferrán Torres,La Liga,0.36,0.16,Star,Star,0.5170977
+Kevin De Bruyne,Bundesliga,0.88,0.23,Star,Star,0.51484686
+Bernardo Silva,Ligue 1,0.54,0.18,Star,Star,0.5142356
+Nolito,La Liga,0.69,0.26,Star,Star,0.49890888
+Patrick Cutrone,Serie A,0.32,0.21,Star,Star,0.4824419
+Kevin Mbabu,Bundesliga,0.05,0.04,Star,Star,0.47297856
+Bruno Fernandes,Serie A,0.36,0.3,Star,Star,0.4633759
+Yoane Wissa,Ligue 1,0.47,0.32,Star,Star,0.4592891
+Jéremy Doku,Ligue 1,0.56,0.21,Star,Star,0.44041726
+Lucas Paquetá,Ligue 1,0.55,0.3,Star,Flop,0.43458405
+Bryan Gil Salvatierra,La Liga,0.27,0.14,Star,Star,0.42664105
+Ademola Lookman,Bundesliga,1.24,0.45,Effective,Effective,0.40444267
+Christopher Nkunku,Bundesliga,0.95,0.63,Effective,Star,0.397879
+Wahbi Khazri,Ligue 1,0.53,0.22,Flop,Flop,0.3878021
+Henri Saivet,Ligue 1,0.15,0.15,Flop,Star,0.37352353
+Roberto Firmino,Bundesliga,0.52,0.28,Flop,Star,0.33732614
+Giovani Lo Celso,La Liga,0.39,0.24,Flop,Star,0.33439785
+Taiwo Awoniyi,Bundesliga,0.46,0.43,Effective,Star,0.29979098
+Islam Slimani,Ligue 1,1.12,0.63,Flop,Flop,0.28770795
+Álvaro Negredo,La Liga,0.55,0.53,Effective,Effective,0.28696483
+Henrikh Mkhitaryan,Bundesliga,0.91,0.4,Effective,Effective,0.26852196
+Timo Werner,Bundesliga,1.15,0.67,Effective,Effective,0.24623692
+Cristiano Ronaldo,Serie A,1.03,0.76,Flop,Flop,0.22468178
+Gerard Deulofeu,La Liga,0.36,0.2,Flop,Star,0.22259502
+Wout Weghorst,Bundesliga,0.85,0.49,Effective,Flop,0.2222649
+Isaac Mbenza,Ligue 1,0.34,0.33,Flop,Flop,0.22026871
+Luciano Vietto,La Liga,0.34,0.2,Effective,Effective,0.21025506
+Anssumane Fati,La Liga,0.67,0.71,Flop,Effective,0.20750098
+Adrián,La Liga,0.12,0.14,Flop,Flop,0.19813687
+Wahbi Khazri,Ligue 1,0.67,0.26,Flop,Flop,0.19742702
+Isaac Success,La Liga,0.29,0.26,Effective,Effective,0.1947895
+Pedro,La Liga,0.71,0.46,Effective,Effective,0.19347525
+Borja Bastón,La Liga,0.37,0.43,Flop,Flop,0.17908287
+Manolo Gabbiadini,Serie A,1.36,0.64,Effective,Effective,0.17666116
+Clinton N'Jie,Ligue 1,0.83,0.5,Effective,Effective,0.17648636
+Lucas Pérez,La Liga,0.45,0.21,Effective,Star,0.1750773
+Oliver Burke,Bundesliga,0.45,0.36,Effective,Effective,0.17461081
+Gerard Deulofeu,La Liga,0.68,0.27,Effective,Star,0.17025472
+Moise Kean,Serie A,1.02,0.65,Effective,Effective,0.15547092
+Adrián,La Liga,0.4,0.3,Flop,Flop,0.1504364
+Borja Bastón,La Liga,0.73,0.57,Flop,Flop,0.14812009
+Giovanni Reyna,Bundesliga,1.36,0.5,Effective,Effective,0.14540462
+Oliver Burke,La Liga,0.13,0.17,Flop,Flop,0.14387858
+Sandro Ramírez,La Liga,0.66,0.24,Flop,Flop,0.13464642
+Felipe Anderson,Serie A,0.87,0.22,Effective,Effective,0.1332324
+Max Gradel,Ligue 1,0.82,0.44,Effective,Flop,0.13277395
+Steve Mounie,Ligue 1,0.54,0.37,Effective,Effective,0.13212822
+Vicente Iborra,La Liga,0.56,0.34,Flop,Flop,0.12961818
+Andriy Yarmolenko,Bundesliga,0.43,0.44,Effective,Effective,0.12829791
+João Pedro,Serie A,0.52,0.26,Flop,Effective,0.12827691
+Georges-Kévin Nkoudou,Ligue 1,0.35,0.15,Flop,Flop,0.12608011
+Romain Faivre,Ligue 1,0.53,0.17,Flop,Flop,0.12343365
+Son Heung-Min,Bundesliga,0.51,0.21,Effective,Effective,0.12163405
+Nordin Amrabat,La Liga,0.44,0.18,Flop,Flop,0.121519476
+Willian José,La Liga,0.53,0.52,Flop,Flop,0.119079
+Sofiane Boufal,Ligue 1,0.57,0.13,Flop,Flop,0.11768573
+Yoshinori Muto,Bundesliga,0.47,0.23,Flop,Flop,0.1174374
+Carlos Vinicius,Ligue 1,0.55,0.51,Effective,Effective,0.11418067
+Hélder Costa,Ligue 1,0.35,0.21,Flop,Flop,0.11388727
+Rachid Ghezzal,Ligue 1,0.45,0.21,Flop,Flop,0.113205425
+Anwar El Ghazi,Ligue 1,0.44,0.23,Effective,Effective,0.11265796
+Denis Suárez,La Liga,0.62,0.32,Flop,Flop,0.11168051
+Philippe Coutinho,La Liga,0.54,0.58,Flop,Flop,0.111405075
+Neal Maupay,Ligue 1,0.53,0.16,Effective,Effective,0.11093891
+Adama Diakhaby,Ligue 1,0.53,0.21,Flop,Flop,0.108497925
+Josh Maja,Ligue 1,1.02,0.44,Effective,Effective,0.10624023
+Víctor Ibarbo,Serie A,0.28,0.27,Flop,Flop,0.10517189
+Florin Andone,La Liga,0.5,0.58,Effective,Effective,0.10326089
+Sasa Kalajdzic,Bundesliga,0.88,0.47,Flop,Flop,0.10201829
+Adrián,La Liga,0.92,0.36,Flop,Flop,0.10122396
+Cristhian Stuani,La Liga,0.62,0.44,Flop,Flop,0.09959557
+Marcel Sabitzer,Bundesliga,0.49,0.21,Flop,Flop,0.09862592
+Serge Aurier,Ligue 1,0.15,0.17,Flop,Flop,0.09776129
+Sébastien Haller,Bundesliga,0.99,0.47,Effective,Effective,0.09679943
+João Félix,La Liga,0.69,0.25,Effective,Effective,0.09522262
+Nuno Tavares,Ligue 1,0.23,0.17,Flop,Flop,0.09462601
+Kamil Grosicki,Ligue 1,0.71,0.28,Flop,Flop,0.09442254
+Jean-Philippe Mateta,Bundesliga,0.71,0.68,Flop,Flop,0.0928845
+Morgan Sanson,Ligue 1,0.54,0.1,Flop,Flop,0.091738135
+Abdoulaye Doucouré,Ligue 1,0.38,0.2,Flop,Flop,0.09142963
+Moussa Diaby,Bundesliga,0.56,0.31,Flop,Star,0.09142684
+Juanmi,La Liga,0.32,0.3,Flop,Flop,0.09055901
+Allan Saint-Maximin,Ligue 1,0.28,0.18,Effective,Effective,0.089803115
+Mario Vrancic,Bundesliga,0.35,0.1,Effective,Flop,0.08927311
+Gerard Deulofeu,Serie A,0.43,0.21,Flop,Flop,0.089272074
+Sofiane Feghouli,La Liga,0.14,0.2,Effective,Effective,0.08902792
+Dominik Szoboszlai,Bundesliga,0.48,0.16,Flop,Flop,0.08790882
+Leon Bailey,Bundesliga,0.71,0.27,Effective,Effective,0.08679382
+Arnaut Danjuma Groeneveld,La Liga,0.38,0.43,Flop,Flop,0.08597917
+André Schürrle,Bundesliga,0.36,0.21,Effective,Effective,0.08455804
+Justin Kluivert,La Liga,0.37,0.36,Effective,Effective,0.08395913
+Stefano Okaka,Serie A,0.23,0.3,Flop,Effective,0.08258419
+Leroy Sané,Bundesliga,0.54,0.26,Effective,Effective,0.08166897
+Yohan Cabaye,Ligue 1,0.19,0.1,Flop,Flop,0.08089869
+Juan Cuadrado,Serie A,0.49,0.37,Flop,Flop,0.08034958
+Tomer Hemed,La Liga,0.46,0.33,Effective,Effective,0.0800232
+Emerson,Serie A,0.05,0.03,Flop,Effective,0.07992321
+Kai Havertz,Bundesliga,0.66,0.34,Effective,Effective,0.0798838
+Jean-Philippe Mateta,Bundesliga,0.34,0.41,Effective,Effective,0.07925215
+Ondrej Duda,Bundesliga,0.56,0.23,Flop,Flop,0.07912257
+Nicolas Pepe,Ligue 1,0.89,0.37,Effective,Effective,0.07896145
+M'Baye Niang,Serie A,0.69,0.3,Flop,Flop,0.078342944
+Aaron Ramsey,Ligue 1,0.11,0.18,Flop,Flop,0.07829264
+Mario Lemina,Serie A,0.2,0.25,Flop,Flop,0.0782923
+Morgan Sanson,Ligue 1,0.37,0.17,Flop,Flop,0.07791719
+Joselu,La Liga,0.61,0.27,Flop,Flop,0.07749429
+Emil Krafth,Ligue 1,0.06,0.02,Flop,Flop,0.0767097
+Floyd Ayité,Ligue 1,0.38,0.21,Flop,Flop,0.07622796
+Joel Campbell,La Liga,0.07,0.14,Effective,Effective,0.075401336
+Fode Toure,Serie A,0.18,0.24,Flop,Flop,0.07476024
+Ivan Perisic,Serie A,0.4,0.25,Effective,Effective,0.07425916
+Jadon Sancho,Bundesliga,0.82,0.26,Effective,Effective,0.0742476
+Xherdan Shaqiri,Serie A,0.37,0.1,Effective,Effective,0.07400609
+Ismaila Sarr,Ligue 1,0.45,0.17,Effective,Effective,0.07276706
+Matheus Cunha,Bundesliga,0.46,0.25,Flop,Flop,0.07071759
+Hamed Junior Traore,Serie A,0.35,0.22,Flop,Flop,0.06932103
+Dango Ouattara,Ligue 1,0.63,0.35,Flop,Flop,0.069298625
+Dani Ceballos,La Liga,0.22,0.16,Flop,Flop,0.06913018
+Eric Maxim Choupo-Moting,Bundesliga,0.37,0.24,Effective,Effective,0.06751844
+Lucas Moura,Ligue 1,0.63,0.35,Effective,Effective,0.06658126
+Sofiane Boufal,La Liga,0.26,0.15,Flop,Flop,0.06637127
+Timo Werner,Bundesliga,0.55,0.45,Effective,Effective,0.06579256
+Shinji Okazaki,Bundesliga,0.48,0.32,Flop,Flop,0.06534576
+Anthony Martial,Ligue 1,0.59,0.46,Effective,Effective,0.065277174
+Weston McKennie,Serie A,0.37,0.28,Flop,Flop,0.06480461
+Wilson Odobert,Ligue 1,0.31,0.15,Flop,Flop,0.06469579
+Florian Thauvin,Ligue 1,0.31,0.24,Flop,Flop,0.0644047
+Naby Keita,Bundesliga,0.5,0.15,Flop,Flop,0.06409539
+Lucas Pérez,La Liga,0.71,0.51,Effective,Effective,0.063862815
+Joelinton,Bundesliga,0.5,0.37,Flop,Flop,0.06353881
+Casemiro,La Liga,0.31,0.21,Flop,Flop,0.062520795
+Alessandro Diamanti,Serie A,0.26,0.32,Flop,Flop,0.062157728
+Hamed Junior Traore,Serie A,0.46,0.14,Flop,Flop,0.060779084
+Ross Barkley,Ligue 1,0.59,0.46,Effective,Effective,0.059962064
+Paul Pogba,Serie A,0.6,0.22,Flop,Effective,0.05966276
+Chicharito,Bundesliga,0.7,0.51,Effective,Effective,0.05921826
+Gonçalo Guedes,La Liga,0.39,0.12,Flop,Flop,0.059037585
+Pablo Sarabia,Ligue 1,0.69,0.45,Flop,Flop,0.059013374
+André Ayew,Ligue 1,0.45,0.36,Effective,Effective,0.059001256
+Reiss Nelson,Bundesliga,1.03,0.47,Flop,Flop,0.057269447
+Joselu,Bundesliga,0.4,0.31,Effective,Effective,0.05697173
+Odsonne Edouard,Ligue 1,0.16,0.25,Effective,Effective,0.056319654
+Bastian Schweinsteiger,Bundesliga,0.6,0.14,Flop,Flop,0.055557985
+Nicolo Zaniolo,Serie A,0.1,0.4,Flop,Flop,0.054180138
+Ignacio Pussetto,Serie A,0.33,0.27,Flop,Flop,0.053981654
+Layvin Kurzawa,Ligue 1,0.14,0.06,Flop,Flop,0.053265486
+Ricardo Pereira,Ligue 1,0.26,0.07,Flop,Flop,0.05298932
+Patrick Cutrone,Serie A,0.54,0.47,Flop,Flop,0.052661266
+João Mário,Serie A,0.36,0.22,Flop,Flop,0.05243222
+Víctor Camarasa,La Liga,0.07,0.1,Effective,Effective,0.051502522
+Pablo Fornals,La Liga,0.18,0.14,Flop,Flop,0.050728615
+Bryan Gil Salvatierra,La Liga,0.39,0.36,Flop,Flop,0.050266255
+Bertrand Traoré,Ligue 1,0.29,0.26,Effective,Effective,0.04848571
+Divock Origi,Serie A,0.28,0.33,Flop,Flop,0.048410762
+Ezequiel Schelotto,Serie A,0.0,0.11,Flop,Flop,0.047179725
+Erik Durm,Bundesliga,0.18,0.07,Flop,Flop,0.047068078
+Martin Odegaard,La Liga,0.35,0.12,Effective,Effective,0.045888606
+Franck Zambo,Ligue 1,0.0,0.04,Flop,Flop,0.04574718
+Rasmus Højlund,Serie A,0.54,0.5,Effective,Effective,0.045675434
+Dejan Kulusevski,Serie A,0.33,0.16,Flop,Effective,0.04524529
+Manolo Gabbiadini,Serie A,0.53,0.48,Effective,Effective,0.045051087
+Marcos Alonso,Serie A,0.27,0.13,Flop,Effective,0.04467685
+Alberto Paloschi,Serie A,0.41,0.31,Flop,Flop,0.04235475
+Denis Zakaria,Bundesliga,0.13,0.09,Flop,Flop,0.04148336
+Ilkay Gündogan,Bundesliga,0.18,0.17,Effective,Effective,0.040956426
+Jordan Ayew,Ligue 1,0.58,0.33,Flop,Flop,0.040391207
+Romain Saiss,Ligue 1,0.12,0.07,Flop,Flop,0.039960284
+Youri Tielemans,Ligue 1,0.32,0.1,Flop,Flop,0.03993835
+Ola Toivonen,Ligue 1,0.3,0.31,Flop,Flop,0.03991441
+Issa Kabore,Ligue 1,0.09,0.11,Flop,Flop,0.038291402
+Seydou Doumbia,Serie A,0.33,0.15,Flop,Flop,0.03674997
+Simone Zaza,Serie A,0.7,0.34,Flop,Flop,0.036749654
+Sandro Tonali,Serie A,0.3,0.08,Flop,Flop,0.036486715
+Pascal Groß,Bundesliga,0.3,0.11,Effective,Effective,0.036193933
+João Cancelo,Serie A,0.18,0.09,Flop,Flop,0.035619017
+Beto,Serie A,0.46,0.43,Effective,Effective,0.035117716
+Sergio Reguilón,La Liga,0.22,0.09,Flop,Flop,0.034616426
+Jorginho,Serie A,0.2,0.04,Flop,Flop,0.03362608
+Emerson,La Liga,0.28,0.06,Flop,Flop,0.033266466
+Mauro Zárate,Serie A,0.52,0.36,Flop,Flop,0.03312582
+Bruno Guimarães,Ligue 1,0.2,0.09,Flop,Flop,0.032433864
+Adama Traoré,Ligue 1,0.43,0.12,Flop,Flop,0.032407258
+Juan Iturbe,Serie A,0.19,0.23,Flop,Flop,0.0324005
+Andreas Pereira,Serie A,0.54,0.14,Effective,Effective,0.03215152
+Isaac Success,La Liga,0.18,0.07,Flop,Flop,0.031155368
+Malo Gusto,Ligue 1,0.06,0.03,Effective,Effective,0.030404586
+Henri Saivet,Ligue 1,0.0,0.17,Flop,Flop,0.029481243
+Gonzalo Higuaín,Serie A,0.7,0.38,Effective,Effective,0.028816948
+Nicolás Domínguez,Serie A,0.19,0.08,Flop,Flop,0.027778128
+Marco van Ginkel,Serie A,0.14,0.11,Flop,Flop,0.027696613
+João Pedro,Serie A,0.31,0.24,Flop,Flop,0.027121235
+Emerson,La Liga,0.15,0.04,Flop,Flop,0.026913375
+Nordin Amrabat,La Liga,0.09,0.12,Flop,Flop,0.026684353
+Estupiñán,La Liga,0.0,0.04,Flop,Flop,0.026665661
+Maximilian Wöber,La Liga,0.0,0.03,Flop,Flop,0.026645396
+Jérémy Pied,Ligue 1,0.09,0.02,Flop,Flop,0.026429443
+Jean-Ricner Bellegarde,Ligue 1,0.29,0.09,Flop,Flop,0.026341435
+Stephan Lichtsteiner,Serie A,0.1,0.0,Flop,Flop,0.026059832
+Ola Aina,Serie A,0.21,0.08,Flop,Flop,0.025924264
+Kiko Femenía,La Liga,0.07,0.01,Flop,Flop,0.02580208
+Jordan Veretout,Ligue 1,0.36,0.06,Flop,Flop,0.025268089
+Sasa Lukic,Serie A,0.15,0.09,Flop,Flop,0.02486967
+Gianluca Scamacca,Serie A,0.67,0.42,Flop,Flop,0.024735259
+Mikkel Damsgaard,Serie A,0.3,0.17,Flop,Flop,0.0246736
+Roberto Pereyra,Serie A,0.11,0.07,Effective,Effective,0.023760078
+Pedro Obiang,Serie A,0.13,0.13,Flop,Flop,0.023705361
+Alex Telles,Serie A,0.06,0.02,Flop,Flop,0.023261936
+Christian Eriksen,Serie A,0.19,0.08,Flop,Effective,0.022378894
+Dennis Praet,Serie A,0.15,0.07,Flop,Flop,0.022363529
+Wataru Endo,Bundesliga,0.28,0.16,Flop,Flop,0.021818237
+Patrick Roberts,La Liga,0.0,0.13,Flop,Flop,0.020456748
+Lucas Digne,La Liga,0.26,0.04,Flop,Flop,0.02003778
+Papy Djilobodji,Bundesliga,0.21,0.17,Flop,Flop,0.019950734
+Matteo Darmian,Serie A,0.1,0.08,Flop,Flop,0.019844402
+Remo Freuler,Serie A,0.17,0.07,Flop,Flop,0.019524792
+Bruno,La Liga,0.0,0.01,Flop,Flop,0.019299675
+Jordan Amavi,Ligue 1,0.11,0.04,Flop,Flop,0.0190196
+Emmanuel Dennis,Bundesliga,0.19,0.09,Effective,Effective,0.01879424
+Maxwel Cornet,Ligue 1,0.25,0.07,Flop,Flop,0.018762896
+Joachim Andersen,Ligue 1,0.06,0.06,Flop,Flop,0.018559344
+Christian Fuchs,Bundesliga,0.32,0.04,Flop,Flop,0.01828454
+Bojan,Bundesliga,0.29,0.16,Flop,Flop,0.018234804
+Valentino Lazaro,Bundesliga,0.3,0.07,Flop,Flop,0.01781757
+Sergio Gómez,La Liga,0.12,0.09,Flop,Flop,0.01710935
+Gonzalo Montiel,La Liga,0.18,0.07,Flop,Flop,0.016271817
+Diego Rico,La Liga,0.16,0.06,Flop,Flop,0.016206352
+Sead Kolasinac,Bundesliga,0.35,0.1,Flop,Flop,0.01616872
+Benjamin Mendy,Ligue 1,0.22,0.02,Flop,Flop,0.016107168
+Marc Cucurella,La Liga,0.14,0.06,Flop,Flop,0.015870046
+Álex Moreno,La Liga,0.1,0.05,Flop,Flop,0.015845532
+Tanguy NDombele Alvaro,Ligue 1,0.27,0.06,Effective,Effective,0.015767517
+Álex Moreno,La Liga,0.2,0.1,Flop,Flop,0.015749935
+Danilo,Serie A,0.17,0.07,Flop,Flop,0.015715204
+Andreas Pereira,La Liga,0.34,0.08,Effective,Effective,0.015710585
+Trevoh Chalobah,Ligue 1,0.16,0.09,Flop,Flop,0.015536353
+Jeremie Boga,La Liga,0.19,0.13,Flop,Flop,0.015294878
+N'Golo Kanté,Ligue 1,0.2,0.05,Flop,Flop,0.014765628
+Timothy Castagne,Serie A,0.15,0.1,Flop,Flop,0.014394716
+Romain Perraud,Ligue 1,0.29,0.08,Flop,Flop,0.014267652
+Ashley Young,Serie A,0.31,0.1,Flop,Flop,0.014003241
+Adama Traoré,Ligue 1,0.17,0.08,Effective,Effective,0.013674448
+Pape Sarr,Ligue 1,0.17,0.04,Effective,Effective,0.01271964
+Ryan Gravenberch,Bundesliga,0.0,0.13,Flop,Flop,0.012274619
+Sebastian Prödl,Bundesliga,0.21,0.12,Flop,Flop,0.0121894125
+Ryan Sessegnon,Bundesliga,0.29,0.04,Flop,Flop,0.01187608
+David Luiz,Ligue 1,0.13,0.06,Flop,Flop,0.011826627
+Thiago Alcántara,Bundesliga,0.15,0.13,Flop,Flop,0.011755812
+João Moutinho,Ligue 1,0.22,0.03,Flop,Flop,0.011546347
+Jetro Willems,Bundesliga,0.13,0.03,Flop,Flop,0.01095537
+Adam Masina,Serie A,0.03,0.06,Flop,Flop,0.010827788
+Jefferson Lerma,La Liga,0.04,0.04,Flop,Flop,0.01052112
+Rodrigo Bentancur,Serie A,0.15,0.02,Effective,Effective,0.010460215
+Jean Michael Seri,Ligue 1,0.27,0.06,Flop,Flop,0.010441378
+Chris Richards,Bundesliga,0.17,0.02,Flop,Flop,0.010434097
+Djibril Sidibe,Ligue 1,0.09,0.04,Flop,Flop,0.010426892
+Frederic Guilbert,Ligue 1,0.09,0.01,Flop,Flop,0.010296276
+Fabinho,Ligue 1,0.29,0.06,Flop,Flop,0.010268003
+Orel Mangala,Bundesliga,0.17,0.05,Flop,Flop,0.010248053
+Danilo,Serie A,0.15,0.06,Flop,Effective,0.010186904
+Kenny Tete,Ligue 1,0.09,0.05,Flop,Flop,0.010077145
+Fernando,Serie A,0.18,0.09,Flop,Flop,0.009936241
+Granit Xhaka,Bundesliga,0.15,0.06,Flop,Flop,0.009909794
+Ibrahim Sangare,Ligue 1,0.04,0.07,Flop,Flop,0.009886287
+Nabil Bentaleb,Bundesliga,0.15,0.05,Flop,Flop,0.009785098
+Cafú,Ligue 1,0.0,0.08,Flop,Flop,0.009655011
+Jan Kirchhoff,Bundesliga,0.0,0.1,Flop,Flop,0.009639033
+Dimitri Foulquier,La Liga,0.25,0.07,Flop,Flop,0.009476966
+Callum Hudson-Odoi,Bundesliga,0.15,0.02,Flop,Effective,0.009453043
+Joel Matip,Bundesliga,0.18,0.09,Flop,Flop,0.009410911
+Gabriel,La Liga,0.06,0.07,Flop,Flop,0.009094574
+Ragnar Klavan,Bundesliga,0.0,0.02,Flop,Flop,0.009012586
+Martín Montoya,La Liga,0.17,0.01,Flop,Flop,0.008969892
+Giannelli Imbula,Ligue 1,0.11,0.05,Flop,Flop,0.008883507
+Chimuanya Ugochukwu,Ligue 1,0.07,0.08,Flop,Flop,0.008624665
+Robin Koch,Bundesliga,0.03,0.14,Flop,Flop,0.00860955
+Iyenoma Destiny Udogie,Serie A,0.23,0.12,Flop,Flop,0.00860413
+André Gomes,La Liga,0.0,0.11,Flop,Flop,0.008602489
+Pablo Hernández,La Liga,0.25,0.07,Effective,Effective,0.0085438015
+Marc Navarro,La Liga,0.08,0.05,Flop,Flop,0.008431287
+Konstantinos Mavropanos,Bundesliga,0.12,0.14,Flop,Flop,0.008429235
+Ludwig Augustinsson,Bundesliga,0.18,0.04,Flop,Flop,0.008260521
+Gabriel,Serie A,0.0,0.0,Flop,Flop,0.007998516
+Tyler Adams,Bundesliga,0.1,0.07,Flop,Flop,0.007955032
+Davide Zappacosta,Serie A,0.23,0.03,Flop,Flop,0.007908644
+Florent Hadergjonaj,Bundesliga,0.12,0.01,Flop,Flop,0.0078074588
+Ozan Kabak,Bundesliga,0.2,0.09,Flop,Flop,0.007602523
+Ibrahima Diallo,Ligue 1,0.06,0.0,Flop,Flop,0.007544738
+Diego Carlos,La Liga,0.03,0.05,Flop,Flop,0.0074480167
+Pape Souaré,Ligue 1,0.0,0.01,Flop,Flop,0.007415398
+Bernardo,La Liga,0.07,0.07,Flop,Flop,0.0073749097
+Renan Lodi,La Liga,0.24,0.06,Flop,Flop,0.007265363
+Markus Suttner,Bundesliga,0.3,0.06,Flop,Flop,0.007203003
+Han-Noah Massengo,Ligue 1,0.0,0.07,Flop,Flop,0.0070724315
+Mathieu Debuchy,Ligue 1,0.0,0.07,Flop,Flop,0.0067286496
+Andreas Christensen,Bundesliga,0.06,0.05,Flop,Flop,0.006724201
+Mario Suárez,La Liga,0.08,0.12,Flop,Flop,0.006608093
+Takehiro Tomiyasu,Serie A,0.07,0.08,Flop,Flop,0.0062172976
+Naouirou Ahamada,Bundesliga,0.25,0.04,Flop,Flop,0.00619596
+Danilo,Serie A,0.08,0.03,Flop,Effective,0.0061065876
+Clement Lenglet,La Liga,0.04,0.09,Flop,Flop,0.006058551
+Sergio Romero,Serie A,0.0,0.0,Flop,Flop,0.0060254345
+Fernando Marçal,Ligue 1,0.11,0.01,Flop,Flop,0.006018833
+Fabian Schär,La Liga,0.16,0.13,Flop,Flop,0.0059439666
+Axel Disasi,Ligue 1,0.16,0.07,Flop,Flop,0.005881439
+Sasa Lukic,Serie A,0.13,0.08,Flop,Flop,0.00585545
+Carlos Baleba,Ligue 1,0.0,0.08,Flop,Flop,0.005665713
+Bernardo,La Liga,0.07,0.05,Flop,Flop,0.0055687036
+Wesley Fofana,Ligue 1,0.07,0.06,Flop,Flop,0.0055687027
+Marquinhos,Ligue 1,0.17,0.1,Flop,Flop,0.0054720733
+Abdul Rahman Baba,Bundesliga,0.13,0.01,Flop,Flop,0.005452793
+Manuel Akanji,Bundesliga,0.08,0.08,Flop,Flop,0.0051831338
+André Gomes,Ligue 1,0.28,0.06,Flop,Flop,0.0051585943
+Jean-Philippe Gbamin,Bundesliga,0.1,0.04,Flop,Flop,0.005141964
+Benoit Badiashile Mukinayi,Ligue 1,0.22,0.06,Flop,Flop,0.0051197046
+Nélson Semedo,La Liga,0.13,0.03,Flop,Flop,0.005093243
+Benoit Badiashile Mukinayi,Ligue 1,0.09,0.09,Flop,Flop,0.005088229
+Yasser Larouci,Ligue 1,0.1,0.03,Flop,Flop,0.0050844285
+Kevin Danso,Bundesliga,0.14,0.03,Flop,Effective,0.005055408
+Kalidou Koulibaly,Serie A,0.0,0.04,Flop,Flop,0.0050350064
+Steve Mandanda,Ligue 1,0.0,0.0,Flop,Flop,0.0049505266
+Adrián,La Liga,0.12,0.12,Flop,Flop,0.0049053347
+Mario Lemina,Ligue 1,0.0,0.02,Flop,Flop,0.0048903488
+Erik Pieters,Ligue 1,0.14,0.07,Flop,Flop,0.0048253573
+Timm Klose,Bundesliga,0.14,0.04,Flop,Flop,0.004720942
+Douglas Luiz,La Liga,0.0,0.06,Flop,Flop,0.004595689
+Adrián,La Liga,0.05,0.1,Flop,Flop,0.004594345
+Roberto Jiménez,La Liga,0.0,0.0,Flop,Flop,0.0045627584
+Renato Sanches,Bundesliga,0.0,0.04,Flop,Flop,0.0044664224
+Diogo Dalot,Serie A,0.17,0.04,Flop,Flop,0.004145041
+Joel Robles,La Liga,0.0,0.0,Flop,Flop,0.0040978566
+Idrissa Gueye,Ligue 1,0.2,0.07,Flop,Flop,0.0040812357
+Jakub Kiwior,Serie A,0.0,0.04,Flop,Effective,0.004003866
+Pierre-Emile Højbjerg,Bundesliga,0.07,0.08,Flop,Flop,0.0039857673
+Joe Hart,Serie A,0.0,0.0,Flop,Flop,0.003965062
+Konstantinos Stafylidis,Bundesliga,0.16,0.07,Flop,Flop,0.0038810521
+Tiemoué Bakayoko,Ligue 1,0.12,0.08,Flop,Flop,0.0038324054
+Zack Steffen,Bundesliga,0.0,0.0,Flop,Flop,0.0037833252
+Sofyan Amrabat,Serie A,0.04,0.02,Flop,Flop,0.003758378
+Lamine Koné,Ligue 1,0.0,0.06,Flop,Flop,0.0037419861
+Gökhan Inler,Serie A,0.07,0.03,Flop,Flop,0.0036222772
+Lucas Torreira,Serie A,0.14,0.04,Flop,Flop,0.0036027548
+Emiliano Buendía,La Liga,0.12,0.13,Flop,Flop,0.00354951
+Kieran Trippier,La Liga,0.22,0.0,Flop,Flop,0.0035024467
+Matz Sels,Ligue 1,0.0,0.0,Flop,Flop,0.0034959395
+Yves Bissouma,Ligue 1,0.17,0.12,Flop,Flop,0.003475162
+Wout Faes,Ligue 1,0.03,0.05,Flop,Flop,0.0034722916
+Zanka,Bundesliga,0.18,0.0,Flop,Flop,0.0034601293
+Bruno,La Liga,0.21,0.06,Flop,Flop,0.003237878
+Andrea Ranocchia,Serie A,0.0,0.06,Flop,Flop,0.0032258937
+Ionut Radu,Serie A,0.0,0.0,Flop,Flop,0.0032161376
+Håvard Nordtveit,Bundesliga,0.18,0.04,Flop,Flop,0.0032070703
+Bernardo,Bundesliga,0.13,0.03,Flop,Flop,0.0031970623
+Lyanco,Serie A,0.0,0.07,Flop,Flop,0.0031946106
+Raphael Varane,La Liga,0.07,0.09,Flop,Flop,0.0031933037
+Marten de Roon,Serie A,0.09,0.02,Flop,Flop,0.0031520103
+Franck Zambo,La Liga,0.07,0.1,Flop,Flop,0.0031484035
+Ola Aina,Serie A,0.09,0.02,Flop,Flop,0.0031165355
+Duje Caleta-Car,Ligue 1,0.1,0.03,Flop,Flop,0.0031072597
+Nicolás Otamendi,La Liga,0.17,0.09,Flop,Flop,0.0030631558
+Luis Hernández,La Liga,0.0,0.03,Flop,Flop,0.0030618927
+Danilo,Serie A,0.03,0.03,Flop,Flop,0.0030562372
+Lamine Koné,Ligue 1,0.07,0.03,Flop,Flop,0.0030375042
+Pedro Porro,La Liga,0.0,0.0,Flop,Effective,0.003021787
+Igor Julio,Serie A,0.0,0.02,Flop,Flop,0.0030091242
+Keylor Navas,Ligue 1,0.0,0.0,Flop,Flop,0.002961735
+José Holebas,Serie A,0.09,0.02,Flop,Flop,0.0029270425
+Molla Wagué,Serie A,0.0,0.05,Flop,Flop,0.0029195917
+Caglar Söyüncü,Bundesliga,0.04,0.04,Flop,Flop,0.002856257
+Boubacar Kamara,Ligue 1,0.06,0.02,Flop,Flop,0.0028371129
+Rayan Ait Nouri,Ligue 1,0.14,0.02,Flop,Flop,0.0028364134
+Kepa,La Liga,0.0,0.0,Flop,Flop,0.0027826808
+Pontus Jansson,Serie A,0.15,0.05,Flop,Flop,0.0027614227
+Allan,Serie A,0.21,0.04,Flop,Flop,0.0027535933
+Javier Manquillo,Ligue 1,0.03,0.01,Flop,Flop,0.0027407866
+Sven Botman,Ligue 1,0.0,0.02,Flop,Flop,0.0027228629
+Naif Aguerd,Ligue 1,0.11,0.09,Flop,Flop,0.0026920715
+Cheick Oumar Doucoure,Ligue 1,0.1,0.04,Flop,Flop,0.0026725587
+Fabri,La Liga,0.0,0.0,Flop,Flop,0.0026231185
+Miguel Britos,Serie A,0.06,0.06,Flop,Flop,0.0025825426
+Nampalys Mendy,Ligue 1,0.09,0.0,Flop,Flop,0.0025453384
+Håvard Nordtveit,Bundesliga,0.0,0.04,Flop,Flop,0.0025348912
+Alisson,Serie A,0.0,0.0,Flop,Flop,0.0025201195
+Jonjoe Kenny,Bundesliga,0.16,0.04,Flop,Flop,0.0025109034
+Facundo Pellistri,La Liga,0.0,0.07,Flop,Flop,0.0025083243
+Sokratis,Bundesliga,0.08,0.04,Flop,Flop,0.00250184
+Wesley Hoedt,Serie A,0.1,0.06,Flop,Flop,0.002486474
+Ibrahima Konaté,Bundesliga,0.13,0.1,Flop,Flop,0.0024626467
+Antonio Barreca,Serie A,0.0,0.0,Flop,Flop,0.00246122
+Jesús Gámez,La Liga,0.0,0.01,Flop,Flop,0.0024537442
+Idrissa Gueye,Ligue 1,0.17,0.05,Flop,Flop,0.0024065527
+Micky van de Ven,Bundesliga,0.06,0.04,Flop,Flop,0.002397078
+Aymeric Laporte,La Liga,0.05,0.03,Flop,Flop,0.0023768952
+Florian Lejeune,La Liga,0.06,0.08,Flop,Flop,0.0023372008
+Gabriel,La Liga,0.17,0.03,Flop,Flop,0.0023226421
+Ron-Robert Zieler,Bundesliga,0.0,0.0,Flop,Flop,0.002305972
+Thilo Kehrer,Ligue 1,0.0,0.02,Flop,Flop,0.0022446446
+Valon Behrami,Bundesliga,0.0,0.02,Flop,Flop,0.0022086091
+Aymeric Laporte,La Liga,0.06,0.07,Flop,Flop,0.0022048664
+Maxime Le Marchand,Ligue 1,0.11,0.02,Flop,Flop,0.0021655129
+Diego Llorente,La Liga,0.08,0.06,Flop,Flop,0.0021616793
+Antonio Rüdiger,Serie A,0.08,0.03,Flop,Flop,0.0021543857
+Aaron Hickey,Serie A,0.0,0.0,Flop,Flop,0.0021393544
+Thiago Silva,Ligue 1,0.0,0.01,Flop,Flop,0.0021344507
+Angelo Ogbonna,Serie A,0.0,0.05,Flop,Flop,0.002108867
+Jannik Vestergaard,Bundesliga,0.09,0.06,Flop,Flop,0.0020682954
+Vicente Guaita,La Liga,0.0,0.0,Flop,Flop,0.0020663843
+Micah Richards,Serie A,0.0,0.02,Flop,Flop,0.0020524748
+Guglielmo Vicario,Serie A,0.0,0.0,Flop,Flop,0.0020437269
+William Saliba,Ligue 1,0.05,0.04,Flop,Flop,0.002043719
+Maxime Estève,Ligue 1,0.0,0.02,Flop,Flop,0.001997203
+Eliaquim Mangala,La Liga,0.07,0.09,Flop,Flop,0.0019732255
+Antonio Barragán,La Liga,0.0,0.0,Flop,Flop,0.0019532912
+Stefan Ortega Moreno,Bundesliga,0.03,0.0,Flop,Flop,0.0019428893
+Josko Gvardiol,Bundesliga,0.04,0.07,Flop,Flop,0.0018945469
+Ørjan Nyland,Bundesliga,0.0,0.0,Flop,Flop,0.0018675992
+Thomas Partey,La Liga,0.11,0.07,Flop,Flop,0.0018533835
+Moussa Niakhate,Bundesliga,0.13,0.05,Flop,Flop,0.0018378033
+Boubakary Soumare,Ligue 1,0.05,0.01,Flop,Flop,0.0018351484
+Claudio Bravo,La Liga,0.0,0.0,Flop,Flop,0.0018259699
+Björn Engels,Ligue 1,0.06,0.03,Flop,Flop,0.0018070268
+José Ángel Crespo,La Liga,0.0,0.02,Flop,Flop,0.001803874
+Bernardo,La Liga,0.12,0.1,Flop,Flop,0.0017723847
+Michael Hector,Bundesliga,0.07,0.02,Flop,Flop,0.0017720695
+Ivo Grbic,La Liga,0.0,0.0,Flop,Flop,0.0017628729
+Yohan Benalouane,Serie A,0.04,0.03,Flop,Flop,0.0017519166
+Gabriel,La Liga,0.0,0.03,Flop,Flop,0.0017039125
+Robin Olsen,Serie A,0.0,0.0,Flop,Flop,0.0017017
+Nampalys Mendy,Ligue 1,0.08,0.0,Flop,Flop,0.0016795904
+Shkodran Mustafi,La Liga,0.07,0.05,Flop,Flop,0.0016613781
+Grzegorz Krychowiak,Ligue 1,0.0,0.07,Flop,Flop,0.0016612072
+Pau Torres,La Liga,0.03,0.06,Flop,Flop,0.001641742
+André Onana,Serie A,0.0,0.0,Flop,Flop,0.0016351511
+Uwe Hünemeier,Bundesliga,0.13,0.06,Flop,Flop,0.0016343839
+Sergio Rico,La Liga,0.0,0.0,Flop,Flop,0.0015794924
+Nyom,La Liga,0.03,0.02,Flop,Flop,0.0015786089
+Issa Diop,Ligue 1,0.09,0.06,Flop,Flop,0.0015506953
+Cristian Romero,Serie A,0.14,0.05,Flop,Flop,0.0015436199
+Roque Mesa,La Liga,0.09,0.03,Flop,Flop,0.0015323457
+Loris Karius,Bundesliga,0.0,0.0,Flop,Flop,0.0015228859
+Rúnar Alex Rúnarsson,Ligue 1,0.0,0.0,Flop,Flop,0.0015172602
+Jonny,La Liga,0.08,0.05,Flop,Flop,0.0014478628
+Timm Klose,Bundesliga,0.09,0.03,Flop,Flop,0.0014406287
+Felipe,La Liga,0.0,0.06,Flop,Flop,0.0014086524
+Ibrahim Amadou,La Liga,0.0,0.04,Flop,Flop,0.0014084787
+Santiago Bueno,La Liga,0.03,0.02,Flop,Flop,0.001407402
+Eric Bailly,La Liga,0.0,0.01,Flop,Flop,0.0013862065
+Oriol Romeu,Bundesliga,0.0,0.02,Flop,Flop,0.001365573
+Kiko Casilla,La Liga,0.0,0.0,Flop,Flop,0.0013339715
+Edouard Mendy,Ligue 1,0.0,0.0,Flop,Flop,0.0013317057
+Mohammed Salisu,La Liga,0.07,0.04,Flop,Flop,0.001303491
+Alfred N'Diaye,La Liga,0.06,0.07,Flop,Flop,0.0012886669
+Bernd Leno,Bundesliga,0.0,0.0,Flop,Flop,0.0012793716
+Okay Yokuslu,La Liga,0.09,0.02,Flop,Flop,0.0012464334
+Thomas Strakosha,Serie A,0.0,0.0,Flop,Flop,0.0012085293
+Leon Balogun,Bundesliga,0.0,0.0,Flop,Flop,0.0011421102
+Aleksandar Dragovic,Bundesliga,0.07,0.03,Flop,Flop,0.0011415565
+Max Meyer,Bundesliga,0.0,0.01,Flop,Flop,0.001093632
+Mateo Kovacic,La Liga,0.09,0.03,Flop,Flop,0.0010933019
+Didier Ndong,Ligue 1,0.09,0.05,Flop,Flop,0.0010737394
+Mark Flekken,Bundesliga,0.0,0.0,Flop,Flop,0.0010667028
+Rodri,La Liga,0.13,0.09,Flop,Flop,0.0010535478
+Orestis Karnezis,Serie A,0.0,0.0,Flop,Flop,0.00094428763
+Kevin Wimmer,Bundesliga,0.0,0.01,Flop,Flop,0.00084251974
+Vinicius Souza,La Liga,0.07,0.03,Flop,Flop,0.00081287476
+Ralf Fährmann,Bundesliga,0.0,0.0,Flop,Flop,0.0007927078
+Neto,La Liga,0.0,0.0,Flop,Flop,0.0007422038
+Jonas Lössl,Bundesliga,0.0,0.0,Flop,Flop,0.00064932177

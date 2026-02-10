@@ -1,16 +1,499 @@
-Name,Origin_League,Buying_Club_Tier,Pre_PL_G_A_per_90,PL_G_A_per_90,Predicted_Verdict,Verdict
-Erling Haaland,Bundesliga,Elite,1.3,1.45,Star,Star
-Bruno Fernandes,Liga NOS,Elite,1.15,0.95,Star,Star
-Darwin Nunez,Liga NOS,Elite,1.05,0.75,Star,Star
-Alexander Isak,La Liga,Upper-Mid,0.65,0.7,Star,Star
-Luis Diaz,Liga NOS,Elite,0.9,0.65,Star,Star
-Cody Gakpo,Eredivisie,Elite,1.3,0.6,Star,Star
-Christian Pulisic,Bundesliga,Elite,0.6,0.55,Star,Star
-Timo Werner,Bundesliga,Elite,1.1,0.5,Effective,Effective
-Kai Havertz,Bundesliga,Elite,0.75,0.45,Effective,Effective
-Nicolas Pepe,Ligue 1,Elite,0.95,0.4,Star,Effective
-Hakim Ziyech,Eredivisie,Elite,1.05,0.4,Effective,Effective
-Sebastien Haller,Bundesliga,Mid-Table,0.85,0.35,Star,Effective
-Jadon Sancho,Bundesliga,Elite,1.1,0.35,Effective,Effective
-Takumi Minamino,Austria,Elite,1.1,0.3,Effective,Effective
-Antony,Eredivisie,Elite,0.85,0.25,Flop,Flop
+Name,Origin_League,Buying_Club_Tier,G_A_per_90,npxG_per_90,Predicted_Verdict,PL_Success,Star_Prob
+Pierre-Emerick Aubameyang,Bundesliga,Mid-Table,1.07,0.91,Star,Star,0.8775425034593197
+Edinson Cavani,Ligue 1,Mid-Table,0.76,1.3,Star,Star,0.81544355096916
+Guido Carrillo,Ligue 1,Mid-Table,1.28,0.93,Star,Flop,0.735609206049201
+Zlatan Ibrahimovic,Ligue 1,Mid-Table,1.8,0.84,Star,Star,0.7283426086982859
+Erling Haaland,Bundesliga,Mid-Table,1.23,0.77,Star,Star,0.7281169164785452
+Álvaro Morata,La Liga,Mid-Table,1.29,0.65,Star,Star,0.7178407141325153
+Pierre-Emerick Aubameyang,Bundesliga,Mid-Table,1.01,0.86,Star,Star,0.7158264447425816
+Michy Batshuayi,Bundesliga,Mid-Table,0.86,0.73,Star,Star,0.6359661508385611
+Ryan Babel,La Liga,Mid-Table,0.81,0.2,Star,Star,0.6112098357696705
+Kevin Mbabu,Bundesliga,Mid-Table,0.05,0.04,Star,Star,0.6029441544294485
+Bryan Gil Salvatierra,La Liga,Mid-Table,0.27,0.14,Star,Star,0.6020630363888912
+Henri Saivet,Ligue 1,Mid-Table,0.15,0.15,Star,Star,0.597023958418858
+Kevin De Bruyne,Bundesliga,Mid-Table,0.88,0.23,Star,Star,0.5917565531257588
+Nicolas Jackson,La Liga,Mid-Table,0.89,0.48,Star,Star,0.5851094163991816
+Matheus Pereira,Ligue 1,Mid-Table,0.0,0.13,Star,Star,0.5847599078723451
+Alexandre Lacazette,Ligue 1,Mid-Table,1.15,0.5,Star,Star,0.5666679608286859
+Dimitri Payet,Ligue 1,Mid-Table,0.67,0.12,Star,Star,0.5613429884474186
+Youri Tielemans,Ligue 1,Mid-Table,0.06,0.07,Star,Star,0.5546616154247285
+Mohamed Salah,Serie A,Mid-Table,0.94,0.48,Star,Star,0.5446404536355036
+Michy Batshuayi,La Liga,Mid-Table,0.18,0.25,Star,Star,0.5407223570273623
+Alexander Isak,La Liga,Mid-Table,0.68,0.59,Star,Star,0.5379138398017476
+Modibo Maiga,Ligue 1,Mid-Table,0.46,0.22,Star,Star,0.5345615670632902
+Yoane Wissa,Ligue 1,Mid-Table,0.47,0.32,Star,Star,0.5295557719103365
+Enes Ünal,La Liga,Mid-Table,0.51,0.21,Star,Star,0.5193418871208334
+Michy Batshuayi,Ligue 1,Mid-Table,0.8,0.52,Star,Star,0.5191962910523261
+Raúl Jiménez,La Liga,Mid-Table,0.48,0.44,Star,Star,0.5119588550267309
+Cengiz Ünder,Serie A,Mid-Table,0.31,0.27,Star,Star,0.5010278576750052
+Gareth Bale,La Liga,Mid-Table,0.33,0.33,Star,Star,0.4932316646172618
+Jéremy Doku,Ligue 1,Mid-Table,0.56,0.21,Star,Star,0.48979792848963627
+Divock Origi,Bundesliga,Mid-Table,0.37,0.29,Star,Star,0.48849660191088673
+Taiwo Awoniyi,Bundesliga,Mid-Table,0.46,0.43,Star,Star,0.48289262098458363
+Ferrán Torres,La Liga,Mid-Table,0.36,0.16,Star,Star,0.4788740270822892
+Nolito,La Liga,Mid-Table,0.69,0.26,Star,Star,0.47535177917138344
+Patrick Cutrone,Serie A,Mid-Table,0.32,0.21,Star,Star,0.46355270114889463
+Samir Nasri,La Liga,Mid-Table,0.24,0.14,Star,Star,0.4491638595229108
+Roberto Firmino,Bundesliga,Mid-Table,0.52,0.28,Star,Star,0.4408825448390284
+Bernardo Silva,Ligue 1,Mid-Table,0.54,0.18,Star,Star,0.43917565330085667
+Kamil Grosicki,Ligue 1,Mid-Table,0.64,0.27,Star,Star,0.4325550321547547
+Rodrigo,La Liga,Mid-Table,0.52,0.34,Star,Star,0.4299509124214795
+Bruno Fernandes,Serie A,Mid-Table,0.36,0.3,Star,Star,0.4264768037061581
+Christian Pulisic,Bundesliga,Mid-Table,0.79,0.51,Effective,Star,0.41264736845374617
+Raphinha,Ligue 1,Mid-Table,0.42,0.24,Star,Star,0.4068808191935906
+Chicharito,La Liga,Mid-Table,1.17,0.49,Effective,Flop,0.40189659471987177
+Divock Origi,Ligue 1,Mid-Table,0.46,0.29,Star,Star,0.39897505190835403
+Anssumane Fati,La Liga,Mid-Table,0.67,0.71,Star,Effective,0.374082153204905
+Christopher Nkunku,Bundesliga,Mid-Table,0.95,0.63,Effective,Star,0.3640742459218775
+Lucas Paquetá,Ligue 1,Mid-Table,0.55,0.3,Flop,Flop,0.3365710026383554
+Adrián,La Liga,Mid-Table,0.92,0.36,Effective,Flop,0.29628870914635136
+Islam Slimani,Ligue 1,Mid-Table,1.12,0.63,Flop,Flop,0.294312004897522
+Giovanni Reyna,Bundesliga,Mid-Table,1.36,0.5,Effective,Effective,0.276533483420432
+Ademola Lookman,Bundesliga,Mid-Table,1.24,0.45,Effective,Effective,0.2749438171025378
+Timo Werner,Bundesliga,Mid-Table,1.15,0.67,Effective,Effective,0.26109910683069426
+Gerard Deulofeu,La Liga,Mid-Table,0.36,0.2,Effective,Star,0.24724622749149533
+Álvaro Negredo,La Liga,Mid-Table,0.55,0.53,Effective,Effective,0.2381518019458573
+Henrikh Mkhitaryan,Bundesliga,Mid-Table,0.91,0.4,Effective,Effective,0.23490186425220447
+Giovani Lo Celso,La Liga,Mid-Table,0.39,0.24,Effective,Star,0.21698764566123302
+Gerard Deulofeu,La Liga,Mid-Table,0.68,0.27,Effective,Star,0.21684182924778714
+Carlos Vinicius,Ligue 1,Mid-Table,0.55,0.51,Effective,Effective,0.21660841576326173
+Lucas Pérez,La Liga,Mid-Table,0.45,0.21,Effective,Star,0.20867262507231685
+Jadon Sancho,Bundesliga,Mid-Table,0.82,0.26,Effective,Effective,0.19871088389090882
+Georges-Kévin Nkoudou,Ligue 1,Mid-Table,0.35,0.15,Flop,Flop,0.19581996574809057
+Clinton N'Jie,Ligue 1,Mid-Table,0.83,0.5,Effective,Effective,0.18905139565487736
+Cristiano Ronaldo,Serie A,Mid-Table,1.03,0.76,Flop,Flop,0.18454715402065053
+Manolo Gabbiadini,Serie A,Mid-Table,1.36,0.64,Effective,Effective,0.18327804322030714
+Nicolo Zaniolo,Serie A,Mid-Table,0.1,0.4,Flop,Flop,0.1814436502290288
+Max Gradel,Ligue 1,Mid-Table,0.82,0.44,Effective,Flop,0.17843941435399532
+Wout Weghorst,Bundesliga,Mid-Table,0.85,0.49,Effective,Flop,0.17681381192700432
+Isaac Mbenza,Ligue 1,Mid-Table,0.34,0.33,Flop,Flop,0.17565099460593692
+Pablo Sarabia,Ligue 1,Mid-Table,0.69,0.45,Flop,Flop,0.17522373756671525
+Pedro,La Liga,Mid-Table,0.71,0.46,Effective,Effective,0.16914918100619286
+Felipe Anderson,Serie A,Mid-Table,0.87,0.22,Effective,Effective,0.16892621155778162
+Arnaut Danjuma Groeneveld,La Liga,Mid-Table,0.38,0.43,Flop,Flop,0.1674268710836601
+Dejan Kulusevski,Serie A,Mid-Table,0.33,0.16,Flop,Effective,0.16725155348827034
+Wahbi Khazri,Ligue 1,Mid-Table,0.67,0.26,Flop,Flop,0.1661595498251446
+Justin Kluivert,La Liga,Mid-Table,0.37,0.36,Effective,Effective,0.1660887149132042
+Denis Suárez,La Liga,Mid-Table,0.62,0.32,Flop,Flop,0.1615031330639808
+Nordin Amrabat,La Liga,Mid-Table,0.44,0.18,Flop,Flop,0.1610314189305591
+Kamil Grosicki,Ligue 1,Mid-Table,0.71,0.28,Flop,Flop,0.16058203980458477
+Sébastien Haller,Bundesliga,Mid-Table,0.99,0.47,Effective,Effective,0.16012238077103877
+Reiss Nelson,Bundesliga,Mid-Table,1.03,0.47,Flop,Flop,0.15969940063480187
+Fode Toure,Serie A,Mid-Table,0.18,0.24,Flop,Flop,0.15903072144415362
+Lucas Pérez,La Liga,Mid-Table,0.71,0.51,Effective,Effective,0.15815268554894155
+Joselu,La Liga,Mid-Table,0.61,0.27,Flop,Flop,0.15096988941242648
+Rachid Ghezzal,Ligue 1,Mid-Table,0.45,0.21,Flop,Flop,0.1497111693332456
+Morgan Sanson,Ligue 1,Mid-Table,0.54,0.1,Flop,Flop,0.14825657272443352
+Tomer Hemed,La Liga,Mid-Table,0.46,0.33,Effective,Effective,0.14207622196947503
+Pablo Fornals,La Liga,Mid-Table,0.18,0.14,Flop,Flop,0.14095053403269545
+Sofiane Boufal,Ligue 1,Mid-Table,0.57,0.13,Flop,Flop,0.14020945460976109
+Chicharito,Bundesliga,Mid-Table,0.7,0.51,Effective,Effective,0.13963991692460478
+João Félix,La Liga,Mid-Table,0.69,0.25,Effective,Effective,0.13872551956824433
+Dominik Szoboszlai,Bundesliga,Mid-Table,0.48,0.16,Flop,Flop,0.13854713831050147
+Floyd Ayité,Ligue 1,Mid-Table,0.38,0.21,Flop,Flop,0.1384787362380128
+Leon Bailey,Bundesliga,Mid-Table,0.71,0.27,Effective,Effective,0.13723024147491286
+Adama Diakhaby,Ligue 1,Mid-Table,0.53,0.21,Flop,Flop,0.13696902972170766
+Florin Andone,La Liga,Mid-Table,0.5,0.58,Effective,Effective,0.13591682356068693
+Shinji Okazaki,Bundesliga,Mid-Table,0.48,0.32,Flop,Flop,0.13580272108859884
+Bertrand Traoré,Ligue 1,Mid-Table,0.29,0.26,Effective,Effective,0.13569876009027484
+Joel Campbell,La Liga,Mid-Table,0.07,0.14,Effective,Effective,0.13479068946102843
+João Pedro,Serie A,Mid-Table,0.52,0.26,Flop,Effective,0.1341959230197131
+Luciano Vietto,La Liga,Mid-Table,0.34,0.2,Effective,Effective,0.1339688164683402
+Gonçalo Guedes,La Liga,Mid-Table,0.39,0.12,Flop,Flop,0.1336056076700948
+Nicolas Pepe,Ligue 1,Mid-Table,0.89,0.37,Effective,Effective,0.13356281306900997
+Jean-Philippe Mateta,Bundesliga,Mid-Table,0.71,0.68,Flop,Flop,0.13298925807305828
+Vicente Iborra,La Liga,Mid-Table,0.56,0.34,Flop,Flop,0.13168710341653356
+Moussa Diaby,Bundesliga,Mid-Table,0.56,0.31,Effective,Star,0.1314825117816482
+Borja Bastón,La Liga,Mid-Table,0.73,0.57,Flop,Flop,0.13132220085988924
+Juan Cuadrado,Serie A,Mid-Table,0.49,0.37,Flop,Flop,0.13063878019515973
+Divock Origi,Serie A,Mid-Table,0.28,0.33,Flop,Flop,0.13044721003635093
+Moise Kean,Serie A,Mid-Table,1.02,0.65,Effective,Effective,0.1292423597041001
+Manolo Gabbiadini,Serie A,Mid-Table,0.53,0.48,Effective,Effective,0.12792806821298058
+Oliver Burke,Bundesliga,Mid-Table,0.45,0.36,Effective,Effective,0.12647560304601518
+Stefano Okaka,Serie A,Mid-Table,0.23,0.3,Flop,Effective,0.12616722292137567
+Adrián,La Liga,Mid-Table,0.4,0.3,Flop,Flop,0.12503394886175048
+Hélder Costa,Ligue 1,Mid-Table,0.35,0.21,Flop,Flop,0.12202501468987957
+Anwar El Ghazi,Ligue 1,Mid-Table,0.44,0.23,Effective,Effective,0.12099212308756667
+Jean-Philippe Mateta,Bundesliga,Mid-Table,0.34,0.41,Effective,Effective,0.12049199320392077
+Víctor Ibarbo,Serie A,Mid-Table,0.28,0.27,Flop,Flop,0.12020309256811217
+Adama Traoré,Ligue 1,Mid-Table,0.43,0.12,Flop,Flop,0.120153408178777
+Mauro Zárate,Serie A,Mid-Table,0.52,0.36,Flop,Flop,0.11971141301595646
+Wahbi Khazri,Ligue 1,Mid-Table,0.53,0.22,Flop,Flop,0.1180919014589478
+M'Baye Niang,Serie A,Mid-Table,0.69,0.3,Flop,Flop,0.11794185577216251
+Ignacio Pussetto,Serie A,Mid-Table,0.33,0.27,Flop,Flop,0.11777013029137191
+Josh Maja,Ligue 1,Mid-Table,1.02,0.44,Effective,Effective,0.11676170716951811
+Cristhian Stuani,La Liga,Mid-Table,0.62,0.44,Flop,Flop,0.11623514219673879
+Paul Pogba,Serie A,Mid-Table,0.6,0.22,Flop,Effective,0.11465187528098253
+André Ayew,Ligue 1,Mid-Table,0.45,0.36,Effective,Effective,0.1145728267090607
+Dango Ouattara,Ligue 1,Mid-Table,0.63,0.35,Flop,Flop,0.11419422276565658
+Allan Saint-Maximin,Ligue 1,Mid-Table,0.28,0.18,Effective,Effective,0.11342545071057193
+Philippe Coutinho,La Liga,Mid-Table,0.54,0.58,Flop,Flop,0.11330805363275076
+Kai Havertz,Bundesliga,Mid-Table,0.66,0.34,Effective,Effective,0.11268944208030232
+Willian José,La Liga,Mid-Table,0.53,0.52,Flop,Flop,0.112393018408092
+Andriy Yarmolenko,Bundesliga,Mid-Table,0.43,0.44,Effective,Effective,0.11112720696996672
+Adrián,La Liga,Mid-Table,0.12,0.14,Flop,Flop,0.11087167345854707
+Sasa Kalajdzic,Bundesliga,Mid-Table,0.88,0.47,Flop,Flop,0.11086468978537567
+Weston McKennie,Serie A,Mid-Table,0.37,0.28,Flop,Flop,0.11086464810728425
+Sandro Ramírez,La Liga,Mid-Table,0.66,0.24,Flop,Flop,0.11050445535993918
+Eric Maxim Choupo-Moting,Bundesliga,Mid-Table,0.37,0.24,Effective,Effective,0.10952825211576522
+Ola Toivonen,Ligue 1,Mid-Table,0.3,0.31,Flop,Flop,0.10872329899909466
+Gerard Deulofeu,Serie A,Mid-Table,0.43,0.21,Flop,Flop,0.10824367982207131
+Bryan Gil Salvatierra,La Liga,Mid-Table,0.39,0.36,Flop,Flop,0.10656557529762854
+Romain Faivre,Ligue 1,Mid-Table,0.53,0.17,Flop,Flop,0.10643873804316549
+Ismaila Sarr,Ligue 1,Mid-Table,0.45,0.17,Effective,Effective,0.10621013494508079
+Xherdan Shaqiri,Serie A,Mid-Table,0.37,0.1,Effective,Effective,0.10598074353467248
+Bastian Schweinsteiger,Bundesliga,Mid-Table,0.6,0.14,Flop,Flop,0.10540088863976046
+André Schürrle,Bundesliga,Mid-Table,0.36,0.21,Effective,Effective,0.10470979115500277
+Joselu,Bundesliga,Mid-Table,0.4,0.31,Effective,Effective,0.10353530510193995
+Neal Maupay,Ligue 1,Mid-Table,0.53,0.16,Effective,Effective,0.10347324342402286
+Dani Ceballos,La Liga,Mid-Table,0.22,0.16,Flop,Flop,0.10331826294634797
+Joelinton,Bundesliga,Mid-Table,0.5,0.37,Flop,Flop,0.10269470070293629
+Andreas Pereira,Serie A,Mid-Table,0.54,0.14,Effective,Effective,0.10254313871013078
+Aaron Ramsey,Ligue 1,Mid-Table,0.11,0.18,Flop,Flop,0.10249251018242707
+Simone Zaza,Serie A,Mid-Table,0.7,0.34,Flop,Flop,0.10070504143128735
+Sofiane Feghouli,La Liga,Mid-Table,0.14,0.2,Effective,Effective,0.0983216666872494
+Martin Odegaard,La Liga,Mid-Table,0.35,0.12,Effective,Effective,0.09641557092306227
+Marcel Sabitzer,Bundesliga,Mid-Table,0.49,0.21,Flop,Flop,0.09544641646866195
+Hamed Junior Traore,Serie A,Mid-Table,0.46,0.14,Flop,Flop,0.0940921309145225
+Casemiro,La Liga,Mid-Table,0.31,0.21,Flop,Flop,0.09374924125070656
+Dimitri Foulquier,La Liga,Mid-Table,0.25,0.07,Flop,Flop,0.09363837671218928
+Isaac Success,La Liga,Mid-Table,0.29,0.26,Effective,Effective,0.09342999419759461
+Ibrahim Sangare,Ligue 1,Mid-Table,0.04,0.07,Flop,Flop,0.09335295700200984
+Alberto Paloschi,Serie A,Mid-Table,0.41,0.31,Flop,Flop,0.09329277851463491
+Thiago Alcántara,Bundesliga,Mid-Table,0.15,0.13,Flop,Flop,0.0926160143937852
+Timo Werner,Bundesliga,Mid-Table,0.55,0.45,Effective,Effective,0.09127867413130414
+Gonzalo Higuaín,Serie A,Mid-Table,0.7,0.38,Effective,Effective,0.09062031415724801
+Ross Barkley,Ligue 1,Mid-Table,0.59,0.46,Effective,Effective,0.09059968652823973
+Son Heung-Min,Bundesliga,Mid-Table,0.51,0.21,Effective,Effective,0.09019277094829567
+Abdoulaye Doucouré,Ligue 1,Mid-Table,0.38,0.2,Flop,Flop,0.08915125423212159
+Anthony Martial,Ligue 1,Mid-Table,0.59,0.46,Effective,Effective,0.08856017458018438
+Isaac Success,La Liga,Mid-Table,0.18,0.07,Flop,Flop,0.08834514175358575
+Emil Krafth,Ligue 1,Mid-Table,0.06,0.02,Flop,Flop,0.08783784971090287
+Naby Keita,Bundesliga,Mid-Table,0.5,0.15,Flop,Flop,0.08738842211753345
+Yoshinori Muto,Bundesliga,Mid-Table,0.47,0.23,Flop,Flop,0.08503835240352355
+Lucas Moura,Ligue 1,Mid-Table,0.63,0.35,Effective,Effective,0.08393525228117706
+Beto,Serie A,Mid-Table,0.46,0.43,Effective,Effective,0.08292394265440403
+Steve Mounie,Ligue 1,Mid-Table,0.54,0.37,Effective,Effective,0.08267438170234394
+Borja Bastón,La Liga,Mid-Table,0.37,0.43,Flop,Flop,0.080321384246028
+Patrick Cutrone,Serie A,Mid-Table,0.54,0.47,Flop,Flop,0.08007391949160864
+Mario Vrancic,Bundesliga,Mid-Table,0.35,0.1,Effective,Flop,0.07973935223351089
+Leroy Sané,Bundesliga,Mid-Table,0.54,0.26,Effective,Effective,0.07952827315545488
+João Mário,Serie A,Mid-Table,0.36,0.22,Flop,Flop,0.07902489547051218
+Jordan Ayew,Ligue 1,Mid-Table,0.58,0.33,Flop,Flop,0.07858893463993775
+Ondrej Duda,Bundesliga,Mid-Table,0.56,0.23,Flop,Flop,0.0785405144241552
+Ilkay Gündogan,Bundesliga,Mid-Table,0.18,0.17,Effective,Effective,0.07846061109752601
+Matheus Cunha,Bundesliga,Mid-Table,0.46,0.25,Flop,Flop,0.07770652604182322
+Gianluca Scamacca,Serie A,Mid-Table,0.67,0.42,Flop,Flop,0.07472525784632457
+Nordin Amrabat,La Liga,Mid-Table,0.09,0.12,Flop,Flop,0.07297796961721534
+Youri Tielemans,Ligue 1,Mid-Table,0.32,0.1,Flop,Flop,0.07284700410514647
+Mikkel Damsgaard,Serie A,Mid-Table,0.3,0.17,Flop,Flop,0.07210014921659043
+João Pedro,Serie A,Mid-Table,0.31,0.24,Flop,Flop,0.07151173840511828
+Rasmus Højlund,Serie A,Mid-Table,0.54,0.5,Effective,Effective,0.07081337240073848
+Ivan Perisic,Serie A,Mid-Table,0.4,0.25,Effective,Effective,0.07011035335783944
+Morgan Sanson,Ligue 1,Mid-Table,0.37,0.17,Flop,Flop,0.06949615686248362
+Henri Saivet,Ligue 1,Mid-Table,0.0,0.17,Flop,Flop,0.06712982649991876
+Mario Lemina,Serie A,Mid-Table,0.2,0.25,Flop,Flop,0.0661426565748203
+Álex Moreno,La Liga,Mid-Table,0.1,0.05,Flop,Flop,0.06585419198167258
+Juanmi,La Liga,Mid-Table,0.32,0.3,Flop,Flop,0.0657827147698883
+Sofiane Boufal,La Liga,Mid-Table,0.26,0.15,Flop,Flop,0.06510471776848809
+Sandro Tonali,Serie A,Mid-Table,0.3,0.08,Flop,Flop,0.06504207320342124
+Hamed Junior Traore,Serie A,Mid-Table,0.35,0.22,Flop,Flop,0.06479345216237105
+Jordan Veretout,Ligue 1,Mid-Table,0.36,0.06,Flop,Flop,0.0641404839795475
+Seydou Doumbia,Serie A,Mid-Table,0.33,0.15,Flop,Flop,0.06369096316827229
+Oliver Burke,La Liga,Mid-Table,0.13,0.17,Flop,Flop,0.0617297107620522
+Emmanuel Dennis,Bundesliga,Mid-Table,0.19,0.09,Effective,Effective,0.0614026280618346
+Marquinhos,Ligue 1,Mid-Table,0.17,0.1,Flop,Flop,0.060413420458008106
+Alessandro Diamanti,Serie A,Mid-Table,0.26,0.32,Flop,Flop,0.0595155699619168
+Marcos Alonso,Serie A,Mid-Table,0.27,0.13,Flop,Effective,0.05855302780994749
+David Luiz,Ligue 1,Mid-Table,0.13,0.06,Flop,Flop,0.057809100704894714
+Juan Iturbe,Serie A,Mid-Table,0.19,0.23,Flop,Flop,0.05550003296267903
+Emerson,Serie A,Mid-Table,0.05,0.03,Flop,Effective,0.055350476359248287
+Issa Kabore,Ligue 1,Mid-Table,0.09,0.11,Flop,Flop,0.05495225892586062
+Jorginho,Serie A,Mid-Table,0.2,0.04,Flop,Flop,0.05344377461104273
+Odsonne Edouard,Ligue 1,Mid-Table,0.16,0.25,Effective,Effective,0.053168581898661714
+Joel Matip,Bundesliga,Mid-Table,0.18,0.09,Flop,Flop,0.05154455074985527
+Florian Thauvin,Ligue 1,Mid-Table,0.31,0.24,Flop,Flop,0.05123864464367583
+Álex Moreno,La Liga,Mid-Table,0.2,0.1,Flop,Flop,0.050562323501635496
+Malo Gusto,Ligue 1,Mid-Table,0.06,0.03,Effective,Effective,0.050530763527848466
+Wout Faes,Ligue 1,Mid-Table,0.03,0.05,Flop,Flop,0.050309072781655036
+Nuno Tavares,Ligue 1,Mid-Table,0.23,0.17,Flop,Flop,0.048577911778703665
+Serge Aurier,Ligue 1,Mid-Table,0.15,0.17,Flop,Flop,0.04812906677961379
+Andreas Pereira,La Liga,Mid-Table,0.34,0.08,Effective,Effective,0.047894763436957866
+Sead Kolasinac,Bundesliga,Mid-Table,0.35,0.1,Flop,Flop,0.04699571854989755
+Wilson Odobert,Ligue 1,Mid-Table,0.31,0.15,Flop,Flop,0.04542890623258427
+Emerson,La Liga,Mid-Table,0.28,0.06,Flop,Flop,0.04529041247726812
+Danilo,Serie A,Mid-Table,0.17,0.07,Flop,Flop,0.045134177403091315
+Pascal Groß,Bundesliga,Mid-Table,0.3,0.11,Effective,Effective,0.043501335462812755
+Pedro Obiang,Serie A,Mid-Table,0.13,0.13,Flop,Flop,0.04321661459205793
+Kiko Femenía,La Liga,Mid-Table,0.07,0.01,Flop,Flop,0.042872788593660005
+Christian Fuchs,Bundesliga,Mid-Table,0.32,0.04,Flop,Flop,0.0424684158910396
+Tanguy NDombele Alvaro,Ligue 1,Mid-Table,0.27,0.06,Effective,Effective,0.041789562289562286
+Denis Zakaria,Bundesliga,Mid-Table,0.13,0.09,Flop,Flop,0.04144108426732223
+Sergio Reguilón,La Liga,Mid-Table,0.22,0.09,Flop,Flop,0.041104937935827465
+Ron-Robert Zieler,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.03946375519904932
+Gonzalo Montiel,La Liga,Mid-Table,0.18,0.07,Flop,Flop,0.038874285637206914
+Trevoh Chalobah,Ligue 1,Mid-Table,0.16,0.09,Flop,Flop,0.037314074288719315
+Maximilian Wöber,La Liga,Mid-Table,0.0,0.03,Flop,Flop,0.03730971088910429
+Danilo,Serie A,Mid-Table,0.03,0.03,Flop,Flop,0.03666666666666667
+Ezequiel Schelotto,Serie A,Mid-Table,0.0,0.11,Flop,Flop,0.03575792839400426
+Valentino Lazaro,Bundesliga,Mid-Table,0.3,0.07,Flop,Flop,0.03557074695269692
+Jean-Ricner Bellegarde,Ligue 1,Mid-Table,0.29,0.09,Flop,Flop,0.03483256249454571
+Lucas Digne,La Liga,Mid-Table,0.26,0.04,Flop,Flop,0.03473725000447534
+Roberto Pereyra,Serie A,Mid-Table,0.11,0.07,Effective,Effective,0.03459119414024442
+Wataru Endo,Bundesliga,Mid-Table,0.28,0.16,Flop,Flop,0.03441454618683747
+Fernando Marçal,Ligue 1,Mid-Table,0.11,0.01,Flop,Flop,0.03401657042062812
+Matz Sels,Ligue 1,Mid-Table,0.0,0.0,Flop,Flop,0.03344632768361582
+Uwe Hünemeier,Bundesliga,Mid-Table,0.13,0.06,Flop,Flop,0.033372082166199815
+Matteo Darmian,Serie A,Mid-Table,0.1,0.08,Flop,Flop,0.0329501916329954
+Emerson,La Liga,Mid-Table,0.15,0.04,Flop,Flop,0.03185576305349471
+Jeremie Boga,La Liga,Mid-Table,0.19,0.13,Flop,Flop,0.03152945556305844
+João Cancelo,Serie A,Mid-Table,0.18,0.09,Flop,Flop,0.031465089928704386
+Ola Aina,Serie A,Mid-Table,0.09,0.02,Flop,Flop,0.030546488770946977
+Kevin Wimmer,Bundesliga,Mid-Table,0.0,0.01,Flop,Flop,0.030112994350282484
+Fabinho,Ligue 1,Mid-Table,0.29,0.06,Flop,Flop,0.02895673130547807
+Christian Eriksen,Serie A,Mid-Table,0.19,0.08,Effective,Effective,0.02884310612936711
+Ludwig Augustinsson,Bundesliga,Mid-Table,0.18,0.04,Flop,Flop,0.028841122946913735
+Raphael Varane,La Liga,Mid-Table,0.07,0.09,Flop,Flop,0.028784744991097337
+Jetro Willems,Bundesliga,Mid-Table,0.13,0.03,Flop,Flop,0.027580105025873217
+Michael Hector,Bundesliga,Mid-Table,0.07,0.02,Flop,Flop,0.027519374416433245
+Axel Disasi,Ligue 1,Mid-Table,0.16,0.07,Flop,Flop,0.027263373642139783
+Abdul Rahman Baba,Bundesliga,Mid-Table,0.13,0.01,Flop,Flop,0.025973521339733414
+Callum Hudson-Odoi,Bundesliga,Mid-Table,0.15,0.02,Flop,Effective,0.02564527760204695
+Max Meyer,Bundesliga,Mid-Table,0.0,0.01,Flop,Flop,0.025410082882665136
+Ryan Sessegnon,Bundesliga,Mid-Table,0.29,0.04,Flop,Flop,0.02481669242371753
+Jordan Amavi,Ligue 1,Mid-Table,0.11,0.04,Flop,Flop,0.024370902668432393
+Estupiñán,La Liga,Mid-Table,0.0,0.04,Flop,Flop,0.02396370517270121
+João Moutinho,Ligue 1,Mid-Table,0.22,0.03,Flop,Flop,0.022784486658539656
+Kieran Trippier,La Liga,Mid-Table,0.22,0.0,Flop,Flop,0.02272482325999578
+Benjamin Mendy,Ligue 1,Mid-Table,0.22,0.02,Flop,Flop,0.022720135496654633
+Ola Aina,Serie A,Mid-Table,0.21,0.08,Flop,Flop,0.02219689572955689
+Iyenoma Destiny Udogie,Serie A,Mid-Table,0.23,0.12,Flop,Flop,0.021770233425695614
+Bruno,La Liga,Mid-Table,0.0,0.01,Flop,Flop,0.020933701420989555
+Ashley Young,Serie A,Mid-Table,0.31,0.1,Flop,Flop,0.020712908950044514
+Víctor Camarasa,La Liga,Mid-Table,0.07,0.1,Effective,Effective,0.019830231001593493
+Erik Durm,Bundesliga,Mid-Table,0.18,0.07,Flop,Flop,0.019699090504315207
+Antonio Rüdiger,Serie A,Mid-Table,0.08,0.03,Flop,Flop,0.01947517446433855
+Marco van Ginkel,Serie A,Mid-Table,0.14,0.11,Flop,Flop,0.01942414438814682
+Diego Rico,La Liga,Mid-Table,0.16,0.06,Flop,Flop,0.019367189754811047
+Bojan,Bundesliga,Mid-Table,0.29,0.16,Flop,Flop,0.018966805890611338
+Franck Zambo,Ligue 1,Mid-Table,0.0,0.04,Flop,Flop,0.018943864629428625
+Pablo Hernández,La Liga,Mid-Table,0.25,0.07,Effective,Effective,0.017468735269408103
+Renan Lodi,La Liga,Mid-Table,0.24,0.06,Flop,Flop,0.017283424923860598
+Romain Perraud,Ligue 1,Mid-Table,0.29,0.08,Flop,Flop,0.017120874326298788
+Sasa Lukic,Serie A,Mid-Table,0.15,0.09,Flop,Flop,0.01684875238642898
+Bruno,La Liga,Mid-Table,0.21,0.06,Flop,Flop,0.016086722257885173
+Davide Zappacosta,Serie A,Mid-Table,0.23,0.03,Flop,Flop,0.015802245213595377
+Fabian Schär,La Liga,Mid-Table,0.16,0.13,Flop,Flop,0.01580138677403033
+Markus Suttner,Bundesliga,Mid-Table,0.3,0.06,Flop,Flop,0.015649572308726215
+Chimuanya Ugochukwu,Ligue 1,Mid-Table,0.07,0.08,Flop,Flop,0.015470771927124271
+Papy Djilobodji,Bundesliga,Mid-Table,0.21,0.17,Flop,Flop,0.015386996034876602
+Emiliano Buendía,La Liga,Mid-Table,0.12,0.13,Flop,Flop,0.015345904844763236
+Frederic Guilbert,Ligue 1,Mid-Table,0.09,0.01,Flop,Flop,0.01515078128654631
+Ryan Gravenberch,Bundesliga,Mid-Table,0.0,0.13,Flop,Flop,0.014677231892503763
+Orel Mangala,Bundesliga,Mid-Table,0.17,0.05,Flop,Flop,0.014626645361939477
+Marc Cucurella,La Liga,Mid-Table,0.14,0.06,Flop,Flop,0.014400914926045966
+Josko Gvardiol,Bundesliga,Mid-Table,0.04,0.07,Flop,Flop,0.013987638224926359
+Robin Koch,Bundesliga,Mid-Table,0.03,0.14,Flop,Flop,0.013910314263517168
+Lucas Torreira,Serie A,Mid-Table,0.14,0.04,Flop,Flop,0.013521469476499315
+Zack Steffen,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.01344632768361582
+Yohan Cabaye,Ligue 1,Mid-Table,0.19,0.1,Flop,Flop,0.013235405556955782
+Caglar Söyüncü,Bundesliga,Mid-Table,0.04,0.04,Flop,Flop,0.013100118835412951
+Sebastian Prödl,Bundesliga,Mid-Table,0.21,0.12,Flop,Flop,0.0129655614308333
+Diogo Dalot,Serie A,Mid-Table,0.17,0.04,Flop,Flop,0.012686658679289746
+Maxwel Cornet,Ligue 1,Mid-Table,0.25,0.07,Flop,Flop,0.012592804314085604
+Miguel Britos,Serie A,Mid-Table,0.06,0.06,Flop,Flop,0.012384894698620188
+Pierre-Emile Højbjerg,Bundesliga,Mid-Table,0.07,0.08,Flop,Flop,0.012371744831683979
+Alex Telles,Serie A,Mid-Table,0.06,0.02,Flop,Flop,0.012334604563223672
+Jérémy Pied,Ligue 1,Mid-Table,0.09,0.02,Flop,Flop,0.012259246895011915
+Timothy Castagne,Serie A,Mid-Table,0.15,0.1,Flop,Flop,0.011986477728673598
+Bruno Guimarães,Ligue 1,Mid-Table,0.2,0.09,Flop,Flop,0.011711987347939195
+Naouirou Ahamada,Bundesliga,Mid-Table,0.25,0.04,Flop,Flop,0.011546554476221996
+Nicolás Otamendi,La Liga,Mid-Table,0.17,0.09,Flop,Flop,0.011114513224708127
+Timm Klose,Bundesliga,Mid-Table,0.14,0.04,Flop,Flop,0.011096405228758169
+Danilo,Serie A,Mid-Table,0.08,0.03,Effective,Effective,0.011087606837606838
+Marc Navarro,La Liga,Mid-Table,0.08,0.05,Flop,Flop,0.0108009977827051
+Jan Kirchhoff,Bundesliga,Mid-Table,0.0,0.1,Flop,Flop,0.010759015559184017
+Kevin Danso,Bundesliga,Mid-Table,0.14,0.03,Flop,Effective,0.010664038078999715
+Zanka,Bundesliga,Mid-Table,0.18,0.0,Flop,Flop,0.010481022466316584
+Oriol Romeu,Bundesliga,Mid-Table,0.0,0.02,Flop,Flop,0.010410082882665135
+Jefferson Lerma,La Liga,Mid-Table,0.04,0.04,Flop,Flop,0.010380671117959253
+Ionut Radu,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.010224466891133559
+Granit Xhaka,Bundesliga,Mid-Table,0.15,0.06,Flop,Flop,0.01015985243782922
+Joe Hart,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.010123456790123457
+N'Golo Kanté,Ligue 1,Mid-Table,0.2,0.05,Flop,Flop,0.010097556564558
+Andreas Christensen,Bundesliga,Mid-Table,0.06,0.05,Flop,Flop,0.009843879976232917
+Bernardo,Bundesliga,Mid-Table,0.13,0.03,Flop,Flop,0.009762180629827687
+Jonjoe Kenny,Bundesliga,Mid-Table,0.16,0.04,Flop,Flop,0.009332144979203802
+Yves Bissouma,Ligue 1,Mid-Table,0.17,0.12,Flop,Flop,0.009075350456561788
+Layvin Kurzawa,Ligue 1,Mid-Table,0.14,0.06,Flop,Flop,0.008820136667335445
+Adama Traoré,Ligue 1,Mid-Table,0.17,0.08,Effective,Effective,0.008792738852032377
+José Holebas,Serie A,Mid-Table,0.09,0.02,Flop,Flop,0.008372549019607843
+Danilo,Serie A,Mid-Table,0.15,0.06,Effective,Effective,0.008353827319851662
+Florent Hadergjonaj,Bundesliga,Mid-Table,0.12,0.01,Flop,Flop,0.008151960784313725
+Ibrahima Konaté,Bundesliga,Mid-Table,0.13,0.1,Flop,Flop,0.007701039764988136
+Konstantinos Mavropanos,Bundesliga,Mid-Table,0.12,0.14,Flop,Flop,0.007680781655426685
+Nabil Bentaleb,Bundesliga,Mid-Table,0.15,0.05,Flop,Flop,0.007235636415303935
+Jonny,La Liga,Mid-Table,0.08,0.05,Flop,Flop,0.00719122356998971
+Aymeric Laporte,La Liga,Mid-Table,0.05,0.03,Flop,Flop,0.0071286385976340495
+Sergio Gómez,La Liga,Mid-Table,0.12,0.09,Flop,Flop,0.007105686208403453
+Mark Flekken,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.007076749549331802
+Idrissa Gueye,Ligue 1,Mid-Table,0.2,0.07,Flop,Flop,0.00698909095609239
+Giannelli Imbula,Ligue 1,Mid-Table,0.11,0.05,Flop,Flop,0.0069832615973218545
+Javier Manquillo,Ligue 1,Mid-Table,0.03,0.01,Flop,Flop,0.006880671117959253
+Okay Yokuslu,La Liga,Mid-Table,0.09,0.02,Flop,Flop,0.006787183165949307
+Joel Robles,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.006779661016949152
+Aaron Hickey,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.006767676767676768
+Micky van de Ven,Bundesliga,Mid-Table,0.06,0.04,Flop,Flop,0.006209399579040656
+Rodrigo Bentancur,Serie A,Mid-Table,0.15,0.02,Effective,Effective,0.0060357935284245925
+Nicolás Domínguez,Serie A,Mid-Table,0.19,0.08,Flop,Flop,0.006024856311008739
+Alfred N'Diaye,La Liga,Mid-Table,0.06,0.07,Flop,Flop,0.005953849832615973
+Fernando,Serie A,Mid-Table,0.18,0.09,Flop,Flop,0.005258283306795815
+Stephan Lichtsteiner,Serie A,Mid-Table,0.1,0.0,Flop,Flop,0.005162672476397966
+Martín Montoya,La Liga,Mid-Table,0.17,0.01,Flop,Flop,0.0051596798024579
+Bernardo,La Liga,Mid-Table,0.12,0.1,Flop,Flop,0.004964149609013283
+Lamine Koné,Ligue 1,Mid-Table,0.07,0.03,Flop,Flop,0.004862049476109734
+Bernardo,La Liga,Mid-Table,0.07,0.07,Flop,Flop,0.004815172085242573
+Cheick Oumar Doucoure,Ligue 1,Mid-Table,0.1,0.04,Flop,Flop,0.004423546802312942
+Allan,Serie A,Mid-Table,0.21,0.04,Flop,Flop,0.004396496063162729
+Mario Suárez,La Liga,Mid-Table,0.08,0.12,Flop,Flop,0.004169813708809443
+Idrissa Gueye,Ligue 1,Mid-Table,0.17,0.05,Flop,Flop,0.004162854131557861
+Nélson Semedo,La Liga,Mid-Table,0.13,0.03,Flop,Flop,0.004156013456686291
+Chris Richards,Bundesliga,Mid-Table,0.17,0.02,Flop,Flop,0.0040824915824915825
+Björn Engels,Ligue 1,Mid-Table,0.06,0.03,Flop,Flop,0.0038555152068636
+Konstantinos Stafylidis,Bundesliga,Mid-Table,0.16,0.07,Flop,Flop,0.0038324915824915827
+Jakub Kiwior,Serie A,Mid-Table,0.0,0.04,Flop,Effective,0.003766133557800224
+Manuel Akanji,Bundesliga,Mid-Table,0.08,0.08,Flop,Flop,0.003741322965967996
+Douglas Luiz,La Liga,Mid-Table,0.0,0.06,Flop,Flop,0.0037140044512925866
+Benoit Badiashile Mukinayi,Ligue 1,Mid-Table,0.09,0.09,Flop,Flop,0.003683734890087237
+Carlos Baleba,Ligue 1,Mid-Table,0.0,0.08,Flop,Flop,0.003676212741087083
+Erik Pieters,Ligue 1,Mid-Table,0.14,0.07,Flop,Flop,0.003649928263988522
+Patrick Roberts,La Liga,Mid-Table,0.0,0.13,Flop,Flop,0.003620674882247863
+Takehiro Tomiyasu,Serie A,Mid-Table,0.07,0.08,Flop,Flop,0.0036024340770791077
+Håvard Nordtveit,Bundesliga,Mid-Table,0.18,0.04,Flop,Flop,0.0035732323232323233
+Bernardo,La Liga,Mid-Table,0.07,0.05,Flop,Flop,0.003554859933626074
+Jesús Gámez,La Liga,Mid-Table,0.0,0.01,Flop,Flop,0.00354733778462592
+Sven Botman,Ligue 1,Mid-Table,0.0,0.02,Flop,Flop,0.00354733778462592
+Mathieu Debuchy,Ligue 1,Mid-Table,0.0,0.07,Flop,Flop,0.00354733778462592
+Cristian Romero,Serie A,Mid-Table,0.14,0.05,Flop,Flop,0.0034960058097312998
+Mateo Kovacic,La Liga,Mid-Table,0.09,0.03,Flop,Flop,0.0034538498326159733
+Didier Ndong,Ligue 1,Mid-Table,0.09,0.05,Flop,Flop,0.0034538498326159733
+Han-Noah Massengo,Ligue 1,Mid-Table,0.0,0.07,Flop,Flop,0.003446327683615819
+Pedro Porro,La Liga,Mid-Table,0.0,0.0,Flop,Effective,0.003446327683615819
+Håvard Nordtveit,Bundesliga,Mid-Table,0.0,0.04,Flop,Flop,0.003446327683615819
+Ivo Grbic,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.003446327683615819
+Ragnar Klavan,Bundesliga,Mid-Table,0.0,0.02,Flop,Flop,0.003446327683615819
+Jonas Lössl,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.003446327683615819
+Renato Sanches,Bundesliga,Mid-Table,0.0,0.04,Flop,Flop,0.003446327683615819
+Thiago Silva,Ligue 1,Mid-Table,0.0,0.01,Flop,Flop,0.003446327683615819
+Dennis Praet,Serie A,Mid-Table,0.15,0.07,Flop,Flop,0.003389139248634263
+Marten de Roon,Serie A,Mid-Table,0.09,0.02,Flop,Flop,0.003372549019607843
+Sergio Romero,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0033333333333333335
+Lyanco,Serie A,Mid-Table,0.0,0.07,Flop,Flop,0.0033333333333333335
+Ricardo Pereira,Ligue 1,Mid-Table,0.26,0.07,Flop,Flop,0.003290331589012261
+Jean Michael Seri,Ligue 1,Mid-Table,0.27,0.06,Flop,Flop,0.0031080832323717934
+Remo Freuler,Serie A,Mid-Table,0.17,0.07,Flop,Flop,0.0030396714497820583
+Mario Lemina,Ligue 1,Mid-Table,0.0,0.02,Flop,Flop,0.0025
+Aleksandar Dragovic,Bundesliga,Mid-Table,0.07,0.03,Flop,Flop,0.002400326797385621
+Adrián,La Liga,Mid-Table,0.05,0.1,Flop,Flop,0.0018942379408196004
+Adrián,La Liga,Mid-Table,0.12,0.12,Flop,Flop,0.0018076756077904231
+Moussa Niakhate,Bundesliga,Mid-Table,0.13,0.05,Flop,Flop,0.0017360368389780154
+Djibril Sidibe,Ligue 1,Mid-Table,0.09,0.04,Flop,Flop,0.0017141077060433255
+Timm Klose,Bundesliga,Mid-Table,0.09,0.03,Flop,Flop,0.0015424836601307188
+Franck Zambo,La Liga,Mid-Table,0.07,0.1,Flop,Flop,0.0015191007437457742
+André Gomes,La Liga,Mid-Table,0.0,0.11,Flop,Flop,0.0014895713763635272
+Jean-Philippe Gbamin,Bundesliga,Mid-Table,0.1,0.04,Flop,Flop,0.0014852941176470588
+Gabriel,La Liga,Mid-Table,0.17,0.03,Flop,Flop,0.0014221884070926554
+André Gomes,Ligue 1,Mid-Table,0.28,0.06,Flop,Flop,0.00123122346293078
+Eliaquim Mangala,La Liga,Mid-Table,0.07,0.09,Flop,Flop,0.0007425584194990022
+Kenny Tete,Ligue 1,Mid-Table,0.09,0.05,Flop,Flop,0.0006398875030569821
+Rodri,La Liga,Mid-Table,0.13,0.09,Flop,Flop,0.000628179334531682
+Florian Lejeune,La Liga,Mid-Table,0.06,0.08,Flop,Flop,0.000564406008046491
+Tiemoué Bakayoko,Ligue 1,Mid-Table,0.12,0.08,Flop,Flop,0.0005464799881264534
+Diego Carlos,La Liga,Mid-Table,0.03,0.05,Flop,Flop,0.0005051512130275839
+Clement Lenglet,La Liga,Mid-Table,0.04,0.09,Flop,Flop,0.00044388950876385124
+Romain Saiss,Ligue 1,Mid-Table,0.12,0.07,Flop,Flop,0.0004091875232477815
+Sasa Lukic,Serie A,Mid-Table,0.13,0.08,Flop,Flop,0.00039255753386923097
+Naif Aguerd,Ligue 1,Mid-Table,0.11,0.09,Flop,Flop,0.00035040155675390423
+Cafú,Ligue 1,Mid-Table,0.0,0.08,Flop,Flop,0.00034287940775375023
+Sokratis,Bundesliga,Mid-Table,0.08,0.04,Flop,Flop,0.00034224598930481285
+Gabriel,La Liga,Mid-Table,0.06,0.07,Flop,Flop,0.00033452095057522676
+Ibrahima Diallo,Ligue 1,Mid-Table,0.06,0.0,Flop,Flop,0.00033452095057522676
+Ozan Kabak,Bundesliga,Mid-Table,0.2,0.09,Flop,Flop,0.0003308951584813654
+Duje Caleta-Car,Ligue 1,Mid-Table,0.1,0.03,Flop,Flop,0.00031659493065518894
+Boubakary Soumare,Ligue 1,Mid-Table,0.05,0.01,Flop,Flop,0.000295305264300717
+Joachim Andersen,Ligue 1,Mid-Table,0.06,0.06,Flop,Flop,0.00023351084956512577
+Adam Masina,Serie A,Mid-Table,0.03,0.06,Flop,Flop,0.0002244668911335578
+Micah Richards,Serie A,Mid-Table,0.0,0.02,Flop,Flop,0.0002244668911335578
+Molla Wagué,Serie A,Mid-Table,0.0,0.05,Flop,Flop,0.0002244668911335578
+Sofyan Amrabat,Serie A,Mid-Table,0.04,0.02,Flop,Flop,0.0002244668911335578
+Igor Julio,Serie A,Mid-Table,0.0,0.02,Flop,Flop,0.0002244668911335578
+Mohammed Salisu,La Liga,Mid-Table,0.07,0.04,Flop,Flop,0.00022152660029274094
+Antonio Barragán,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00021400445129258686
+Steve Mandanda,Ligue 1,Mid-Table,0.0,0.0,Flop,Flop,0.00021400445129258686
+Kiko Casilla,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00021400445129258686
+Tyler Adams,Bundesliga,Mid-Table,0.1,0.07,Flop,Flop,0.00017810457516339868
+Yohan Benalouane,Serie A,Mid-Table,0.04,0.03,Flop,Flop,0.0001666666666666667
+Boubacar Kamara,Ligue 1,Mid-Table,0.06,0.02,Flop,Flop,0.00015221003655699567
+Aymeric Laporte,La Liga,Mid-Table,0.06,0.07,Flop,Flop,0.00015221003655699567
+Pontus Jansson,Serie A,Mid-Table,0.15,0.05,Flop,Flop,0.00014022578728461083
+Benoit Badiashile Mukinayi,Ligue 1,Mid-Table,0.22,0.06,Flop,Flop,0.00012634585805317513
+Yasser Larouci,Ligue 1,Mid-Table,0.1,0.03,Flop,Flop,0.00012051649928263989
+Nampalys Mendy,Ligue 1,Mid-Table,0.09,0.0,Flop,Flop,0.00012051649928263989
+Thomas Partey,La Liga,Mid-Table,0.11,0.07,Flop,Flop,0.00012051649928263989
+Rayan Ait Nouri,Ligue 1,Mid-Table,0.14,0.02,Flop,Flop,0.00012051649928263989
+Vinicius Souza,La Liga,Mid-Table,0.07,0.03,Flop,Flop,0.00012051649928263989
+Diego Llorente,La Liga,Mid-Table,0.08,0.06,Flop,Flop,0.00012051649928263989
+William Saliba,Ligue 1,Mid-Table,0.05,0.04,Flop,Flop,0.00011299435028248587
+Thilo Kehrer,Ligue 1,Mid-Table,0.0,0.02,Flop,Flop,0.00011299435028248587
+Valon Behrami,Bundesliga,Mid-Table,0.0,0.02,Flop,Flop,0.00011299435028248587
+Vicente Guaita,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Ørjan Nyland,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Stefan Ortega Moreno,Bundesliga,Mid-Table,0.03,0.0,Flop,Flop,0.00011299435028248587
+Fabri,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Grzegorz Krychowiak,Ligue 1,Mid-Table,0.0,0.07,Flop,Flop,0.00011299435028248587
+Gabriel,La Liga,Mid-Table,0.0,0.03,Flop,Flop,0.00011299435028248587
+José Ángel Crespo,La Liga,Mid-Table,0.0,0.02,Flop,Flop,0.00011299435028248587
+Kepa,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Felipe,La Liga,Mid-Table,0.0,0.06,Flop,Flop,0.00011299435028248587
+Facundo Pellistri,La Liga,Mid-Table,0.0,0.07,Flop,Flop,0.00011299435028248587
+Keylor Navas,Ligue 1,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Lamine Koné,Ligue 1,Mid-Table,0.0,0.06,Flop,Flop,0.00011299435028248587
+Leon Balogun,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Loris Karius,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Luis Hernández,La Liga,Mid-Table,0.0,0.03,Flop,Flop,0.00011299435028248587
+Maxime Estève,Ligue 1,Mid-Table,0.0,0.02,Flop,Flop,0.00011299435028248587
+Neto,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Nyom,La Liga,Mid-Table,0.03,0.02,Flop,Flop,0.00011299435028248587
+Eric Bailly,La Liga,Mid-Table,0.0,0.01,Flop,Flop,0.00011299435028248587
+Pape Souaré,Ligue 1,Mid-Table,0.0,0.01,Flop,Flop,0.00011299435028248587
+Pau Torres,La Liga,Mid-Table,0.03,0.06,Flop,Flop,0.00011299435028248587
+Ralf Fährmann,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Roberto Jiménez,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Edouard Mendy,Ligue 1,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Claudio Bravo,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Rúnar Alex Rúnarsson,Ligue 1,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Santiago Bueno,La Liga,Mid-Table,0.03,0.02,Flop,Flop,0.00011299435028248587
+Bernd Leno,Bundesliga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Sergio Rico,La Liga,Mid-Table,0.0,0.0,Flop,Flop,0.00011299435028248587
+Ibrahim Amadou,La Liga,Mid-Table,0.0,0.04,Flop,Flop,0.00011299435028248587
+Nampalys Mendy,Ligue 1,Mid-Table,0.08,0.0,Flop,Flop,8.130081300813008e-05
+Pape Sarr,Ligue 1,Mid-Table,0.17,0.04,Effective,Effective,4.5045045045045046e-05
+Gökhan Inler,Serie A,Mid-Table,0.07,0.03,Flop,Flop,3.9215686274509805e-05
+Wesley Fofana,Ligue 1,Mid-Table,0.07,0.06,Flop,Flop,3.9215686274509805e-05
+Jannik Vestergaard,Bundesliga,Mid-Table,0.09,0.06,Flop,Flop,3.9215686274509805e-05
+Shkodran Mustafi,La Liga,Mid-Table,0.07,0.05,Flop,Flop,3.9215686274509805e-05
+Maxime Le Marchand,Ligue 1,Mid-Table,0.11,0.02,Flop,Flop,3.9215686274509805e-05
+Issa Diop,Ligue 1,Mid-Table,0.09,0.06,Flop,Flop,3.9215686274509805e-05
+Roque Mesa,La Liga,Mid-Table,0.09,0.03,Flop,Flop,3.9215686274509805e-05
+Guglielmo Vicario,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Antonio Barreca,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Alisson,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Andrea Ranocchia,Serie A,Mid-Table,0.0,0.06,Flop,Flop,0.0
+André Onana,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Angelo Ogbonna,Serie A,Mid-Table,0.0,0.05,Flop,Flop,0.0
+Robin Olsen,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Thomas Strakosha,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Orestis Karnezis,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Wesley Hoedt,Serie A,Mid-Table,0.1,0.06,Flop,Flop,0.0
+Gabriel,Serie A,Mid-Table,0.0,0.0,Flop,Flop,0.0
+Kalidou Koulibaly,Serie A,Mid-Table,0.0,0.04,Flop,Flop,0.0

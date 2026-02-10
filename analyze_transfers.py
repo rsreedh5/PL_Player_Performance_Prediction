@@ -13,35 +13,36 @@ from data_generator import get_data
 # Set visual style
 sns.set_theme(style="whitegrid")
 
-def categorize_performance(g_a_per_90):
-    if g_a_per_90 >= 0.55: return "Star"
-    if g_a_per_90 >= 0.30: return "Effective"
-    return "Flop"
-
 def main():
-    print("Loading Enhanced Data...")
+    print("Loading Advanced Soccer Data (Simulated Real-World Distributions)...")
     df = get_data()
     
-    # --- 1. Target Engineering ---
-    # We are now predicting a CLASS, not a number.
-    df["Verdict"] = df["PL_G_A_per_90"].apply(categorize_performance)
-    
+    # --- 1. Target Setup ---
+    # The new generator provides 'PL_Success' directly
     print("\n--- Class Distribution ---")
-    print(df["Verdict"].value_counts(normalize=True))
+    print(df["PL_Success"].value_counts(normalize=True))
 
     # --- 2. Feature Engineering ---
-    # Calculate the 'Delta' that ChatGPT suggested, but for analysis, not direct training target
-    # (Since we are doing classification, we keep raw features but the model will find the delta patterns)
+    # We now have advanced metrics (xG, xA, Progressive Actions)
     
-    X = df[["Origin_League", "Age", "Transfer_Fee_M", "Pre_PL_G_A_per_90", "Buying_Club_Tier"]]
-    y = df["Verdict"]
+    feature_cols = [
+        "Origin_League", 
+        "Age", 
+        "Transfer_Fee_M", 
+        "G_A_per_90", 
+        "npxG_per_90", 
+        "xAG_per_90", 
+        "PrgC_per_90", 
+        "PrgP_per_90", 
+        "Buying_Club_Tier"
+    ]
+    
+    X = df[feature_cols]
+    y = df["PL_Success"]
 
     # --- 3. Pipeline Setup ---
-    # Categorical: League, Club Tier
-    # Numerical: Age, Fee, Pre-Stats
-    
     categorical_features = ["Origin_League", "Buying_Club_Tier"]
-    numerical_features = ["Age", "Transfer_Fee_M", "Pre_PL_G_A_per_90"]
+    numerical_features = ["Age", "Transfer_Fee_M", "G_A_per_90", "npxG_per_90", "xAG_per_90", "PrgC_per_90", "PrgP_per_90"]
 
     preprocessor = ColumnTransformer(
         transformers=[
@@ -53,7 +54,7 @@ def main():
     # Random Forest Classifier
     clf = Pipeline(steps=[
         ('preprocessor', preprocessor),
-        ('classifier', RandomForestClassifier(n_estimators=200, max_depth=10, random_state=42))
+        ('classifier', RandomForestClassifier(n_estimators=300, max_depth=12, random_state=42))
     ])
 
     # --- 4. Cross-Validation (Robustness Check) ---
@@ -81,13 +82,13 @@ def main():
     
     importances = clf.named_steps['classifier'].feature_importances_
     feat_imp = pd.DataFrame({"Feature": feature_names, "Importance": importances})
-    print(feat_imp.sort_values("Importance", ascending=False).head(10))
+    print(feat_imp.sort_values("Importance", ascending=False).head(12))
 
     # --- 7. Real Player Analysis ---
     print("\n--- Real World Predictions ---")
     real_players_df = df[~df["Name"].str.startswith("Player_")].copy()
     
-    # Predict probabilities for nuance
+    # Predict probabilities
     real_X = real_players_df[X.columns]
     predicted_classes = clf.predict(real_X)
     predicted_probs = clf.predict_proba(real_X)
@@ -95,11 +96,14 @@ def main():
     real_players_df["Predicted_Verdict"] = predicted_classes
     
     # Get probability of being a Star
-    star_idx = list(clf.classes_).index("Star")
-    real_players_df["Star_Prob"] = predicted_probs[:, star_idx]
+    if "Star" in clf.classes_:
+        star_idx = list(clf.classes_).index("Star")
+        real_players_df["Star_Prob"] = predicted_probs[:, star_idx]
+    else:
+        real_players_df["Star_Prob"] = 0.0
     
-    cols = ["Name", "Origin_League", "Buying_Club_Tier", "Pre_PL_G_A_per_90", "PL_G_A_per_90", "Predicted_Verdict", "Verdict"]
-    display_df = real_players_df[cols].sort_values("PL_G_A_per_90", ascending=False)
+    cols = ["Name", "Origin_League", "Buying_Club_Tier", "G_A_per_90", "npxG_per_90", "Predicted_Verdict", "PL_Success", "Star_Prob"]
+    display_df = real_players_df[cols].sort_values("Star_Prob", ascending=False)
     
     print(display_df.to_string(index=False))
 
@@ -117,19 +121,25 @@ def main():
     plt.title('Confusion Matrix: Player Success Classification')
     plt.savefig("confusion_matrix.png")
     
-    # Star Probability vs Actual
+    # Feature Importance Plot
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x="Importance", y="Feature", data=feat_imp.sort_values("Importance", ascending=False).head(10), palette="viridis")
+    plt.title("What Matters for Premier League Success?")
+    plt.xlabel("Importance Score (Random Forest)")
+    plt.savefig("feature_importance.png")
+    
+    # Star Probability vs npxG (New Metric Analysis)
     plt.figure(figsize=(12, 8))
-    sns.scatterplot(data=real_players_df, x="Star_Prob", y="PL_G_A_per_90", hue="Verdict", style="Verdict", s=150, palette="deep")
+    sns.scatterplot(data=real_players_df, x="npxG_per_90", y="Star_Prob", hue="PL_Success", style="PL_Success", s=150, palette="deep")
     
     for i, row in real_players_df.iterrows():
-        plt.text(row["Star_Prob"]+0.01, row["PL_G_A_per_90"], row["Name"], fontsize=9)
+        plt.text(row["npxG_per_90"]+0.01, row["Star_Prob"], row["Name"], fontsize=9)
         
-    plt.axvline(0.5, color='gray', linestyle='--')
-    plt.title("Model Confidence (Star Probability) vs. Reality")
-    plt.xlabel("Estimated Probability of being a 'Star'")
-    plt.ylabel("Actual PL G+A/90")
+    plt.title("Expected Goals (npxG) vs. Predicted Star Probability")
+    plt.xlabel("Non-Penalty Expected Goals per 90 (Pre-PL)")
+    plt.ylabel("Model Confidence: 'Star' Probability")
     plt.savefig("star_probability_analysis.png")
-    print("Plots saved: confusion_matrix.png, star_probability_analysis.png")
+    print("Plots saved: confusion_matrix.png, feature_importance.png, star_probability_analysis.png")
 
 if __name__ == "__main__":
     main()

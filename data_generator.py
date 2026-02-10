@@ -1,99 +1,146 @@
 import pandas as pd
 import numpy as np
+import os
 
 def get_data():
     """
-    Returns a DataFrame containing transfer data.
-    Includes real hardcoded examples and enhanced synthetic data.
+    Returns a DataFrame containing transfer data with advanced metrics.
+    Merges REAL 10-year transfer history (Top 5 Leagues) with SYNTHETIC data for others.
     """
     
-    # Real examples with added context (Buying Club Tier, etc.)
-    real_players = [
-        {"Name": "Bruno Fernandes", "Origin_League": "Liga NOS", "Age": 25, "Transfer_Fee_M": 68.0, "Pre_PL_G_A_per_90": 1.15, "PL_G_A_per_90": 0.95, "Buying_Club_Tier": "Elite"},
-        {"Name": "Jadon Sancho", "Origin_League": "Bundesliga", "Age": 21, "Transfer_Fee_M": 73.0, "Pre_PL_G_A_per_90": 1.10, "PL_G_A_per_90": 0.35, "Buying_Club_Tier": "Elite"},
-        {"Name": "Antony", "Origin_League": "Eredivisie", "Age": 22, "Transfer_Fee_M": 85.0, "Pre_PL_G_A_per_90": 0.85, "PL_G_A_per_90": 0.25, "Buying_Club_Tier": "Elite"},
-        {"Name": "Erling Haaland", "Origin_League": "Bundesliga", "Age": 21, "Transfer_Fee_M": 51.0, "Pre_PL_G_A_per_90": 1.30, "PL_G_A_per_90": 1.45, "Buying_Club_Tier": "Elite"},
-        {"Name": "Darwin Nunez", "Origin_League": "Liga NOS", "Age": 22, "Transfer_Fee_M": 64.0, "Pre_PL_G_A_per_90": 1.05, "PL_G_A_per_90": 0.75, "Buying_Club_Tier": "Elite"},
-        {"Name": "Luis Diaz", "Origin_League": "Liga NOS", "Age": 25, "Transfer_Fee_M": 40.0, "Pre_PL_G_A_per_90": 0.90, "PL_G_A_per_90": 0.65, "Buying_Club_Tier": "Elite"},
-        {"Name": "Nicolas Pepe", "Origin_League": "Ligue 1", "Age": 24, "Transfer_Fee_M": 72.0, "Pre_PL_G_A_per_90": 0.95, "PL_G_A_per_90": 0.40, "Buying_Club_Tier": "Elite"},
-        {"Name": "Timo Werner", "Origin_League": "Bundesliga", "Age": 24, "Transfer_Fee_M": 47.0, "Pre_PL_G_A_per_90": 1.10, "PL_G_A_per_90": 0.50, "Buying_Club_Tier": "Elite"},
-        {"Name": "Kai Havertz", "Origin_League": "Bundesliga", "Age": 21, "Transfer_Fee_M": 70.0, "Pre_PL_G_A_per_90": 0.75, "PL_G_A_per_90": 0.45, "Buying_Club_Tier": "Elite"},
-        {"Name": "Christian Pulisic", "Origin_League": "Bundesliga", "Age": 20, "Transfer_Fee_M": 58.0, "Pre_PL_G_A_per_90": 0.60, "PL_G_A_per_90": 0.55, "Buying_Club_Tier": "Elite"},
-        {"Name": "Hakim Ziyech", "Origin_League": "Eredivisie", "Age": 27, "Transfer_Fee_M": 36.0, "Pre_PL_G_A_per_90": 1.05, "PL_G_A_per_90": 0.40, "Buying_Club_Tier": "Elite"},
-        {"Name": "Sebastien Haller", "Origin_League": "Bundesliga", "Age": 25, "Transfer_Fee_M": 45.0, "Pre_PL_G_A_per_90": 0.85, "PL_G_A_per_90": 0.35, "Buying_Club_Tier": "Mid-Table"},
-        {"Name": "Takumi Minamino", "Origin_League": "Austria", "Age": 24, "Transfer_Fee_M": 7.25, "Pre_PL_G_A_per_90": 1.10, "PL_G_A_per_90": 0.30, "Buying_Club_Tier": "Elite"},
-        {"Name": "Cody Gakpo", "Origin_League": "Eredivisie", "Age": 23, "Transfer_Fee_M": 37.0, "Pre_PL_G_A_per_90": 1.30, "PL_G_A_per_90": 0.60, "Buying_Club_Tier": "Elite"},
-        {"Name": "Alexander Isak", "Origin_League": "La Liga", "Age": 22, "Transfer_Fee_M": 63.0, "Pre_PL_G_A_per_90": 0.65, "PL_G_A_per_90": 0.70, "Buying_Club_Tier": "Upper-Mid"},
-    ]
-
-    # Generate Synthetic Data for background stats
+    # --- 1. Load Real 10-Year Transfer History ---
+    real_players = []
+    
+    if os.path.exists("Pl_foreign_transfers.csv"):
+        print("Integrating 10-Year Premier League Transfer History...")
+        history_df = pd.read_csv("Pl_foreign_transfers.csv")
+        
+        # Map Columns to Model Schema
+        # History DF cols: Name, Origin_Season, Origin_League, Origin_Team, Age, Pre_PL_G_A, Pre_PL_npxG, Pre_PL_xA, PL_Debut_Season, PL_Team, PL_Performance, Season_Control
+        
+        for _, row in history_df.iterrows():
+            # Inferred metrics (PrgC/PrgP) are missing in the historical CSV. 
+            # We must synthesize them based on position/stats again, or the model will fail.
+            # Simplified estimation:
+            prgC = row['Pre_PL_xA'] * 8.0 + np.random.normal(1, 0.5) 
+            prgP = row['Pre_PL_npxG'] * 5.0 + np.random.normal(1, 0.5)
+            
+            # Determine Success Label based on ACTUAL PL Performance (Ground Truth)
+            if row['PL_Performance'] >= 0.55: verdict = "Star"
+            elif row['PL_Performance'] >= 0.30: verdict = "Effective"
+            else: verdict = "Flop"
+            
+            real_players.append({
+                "Name": row['Name'],
+                "Origin_League": row['Origin_League'].split("-")[-1] if "-" in row['Origin_League'] else row['Origin_League'],
+                "Age": np.random.randint(20, 29), # Age missing in Understat export, infer range
+                "Transfer_Fee_M": round(row['Pre_PL_npxG'] * 40 + np.random.normal(10, 5), 1), # Historic fee proxy
+                "G_A_per_90": round(row['Pre_PL_G_A'], 2),
+                "npxG_per_90": round(row['Pre_PL_npxG'], 2),
+                "xAG_per_90": round(row['Pre_PL_xA'], 2),
+                "PrgC_per_90": round(max(0, prgC), 2),
+                "PrgP_per_90": round(max(0, prgP), 2),
+                "Buying_Club_Tier": "Mid-Table", # Default for history, can be improved
+                "PL_Success": verdict,
+                "Season_Control": row['Season_Control']
+            })
+            
+    # --- 2. Synthetic Data Generation (For Missing Leagues) ---
+    # We still need synthetic data for Liga NOS, Eredivisie, etc., as Understat doesn't cover them.
     np.random.seed(42)
-    n_samples = 1000  # Increased sample size
+    n_samples = 1500
     
-    leagues = ["Bundesliga", "Liga NOS", "Eredivisie", "Ligue 1", "Serie A", "La Liga", "Austria"]
-    club_tiers = ["Elite", "Upper-Mid", "Mid-Table", "Relegation"]
-    
-    # Updated League Strength (Coefficient): Proxy for average defensive quality
-    # 1.0 = PL Level, Lower = Weaker League (Easier to score)
-    league_strength = {
-        "La Liga": 0.90,
-        "Serie A": 0.85,
-        "Bundesliga": 0.80,
-        "Ligue 1": 0.75,
+    leagues = {
         "Liga NOS": 0.65,
-        "Eredivisie": 0.55,
-        "Austria": 0.40
+        "Eredivisie": 0.60,
+        "Brasileirao": 0.55,
+        "Austria": 0.45
     }
-
+    
     synthetic_data = []
+    
     for _ in range(n_samples):
-        league = np.random.choice(leagues)
-        buying_tier = np.random.choice(club_tiers, p=[0.15, 0.25, 0.40, 0.20])
-        age = np.random.randint(18, 32)
+        league_name = np.random.choice(list(leagues.keys()))
+        league_strength = leagues[league_name]
         
-        # 1. True Talent Generation (Latent Variable)
-        # Distributed normally, but elite clubs buy better players
-        base_talent = np.random.normal(0.5, 0.15)
-        if buying_tier == "Elite": base_talent += 0.2
-        if buying_tier == "Upper-Mid": base_talent += 0.1
+        talent = np.random.normal(0.5, 0.15)
+        pos_type = np.random.choice([0, 1, 2, 3], p=[0.25, 0.30, 0.20, 0.25])
         
-        # 2. League Stats Generation (Reverse Engineering)
-        # Weaker league = higher stats for same talent
-        strength_factor = league_strength[league]
-        pre_stats = base_talent / strength_factor
-        pre_stats += np.random.normal(0, 0.1) # Statistical noise
-        pre_stats = np.clip(pre_stats, 0.2, 1.8)
-
-        # 3. Adaptability Factor (Hidden Variable)
-        # Some players just fit, some don't.
-        adaptability = np.random.normal(0, 0.1) 
+        if talent < 0.4: continue
         
-        # 4. PL Stats Generation
-        # Talent + Adaptability + Club Context Bonus (Better teams create more chances)
-        club_context = {"Elite": 0.1, "Upper-Mid": 0.05, "Mid-Table": 0.0, "Relegation": -0.05}
-        pl_stats = base_talent + adaptability + club_context[buying_tier] + np.random.normal(0, 0.05)
-        pl_stats = np.clip(pl_stats, 0.0, 1.5)
-
-        # 5. Decoupled Transfer Fee Generation
-        # Fee = Stats + Hype + English Tax (if applicable) + Buying Club Wealth
-        hype = np.random.choice([0, 10, 30], p=[0.7, 0.2, 0.1]) # Occasional massive hype
-        wealth_premium = {"Elite": 20, "Upper-Mid": 10, "Mid-Table": 5, "Relegation": 0}
+        raw_production = talent / league_strength
+        g_a = raw_production + np.random.normal(0, 0.1)
         
-        fee = (pre_stats * 25) + wealth_premium[buying_tier] + hype + (28 - age)
-        fee += np.random.normal(0, 5)
-        fee = np.clip(fee, 2, 150)
+        if pos_type == 0: # Striker
+            npxG = g_a * 0.75; xAG = g_a * 0.15; prgC = np.random.normal(1.5, 0.5); prgP = np.random.normal(1.0, 0.3)
+        elif pos_type == 1: # Winger
+            npxG = g_a * 0.40; xAG = g_a * 0.40; prgC = np.random.normal(4.5, 1.0); prgP = np.random.normal(2.5, 0.8)
+        elif pos_type == 2: # #10
+            npxG = g_a * 0.30; xAG = g_a * 0.60; prgC = np.random.normal(3.5, 0.8); prgP = np.random.normal(4.5, 1.2)
+        else: # CM
+            npxG = g_a * 0.15; xAG = g_a * 0.30; prgC = np.random.normal(2.5, 0.8); prgP = np.random.normal(6.0, 1.5)
+            
+        # Add noise
+        npxG = np.clip(npxG + np.random.normal(0, 0.05), 0, 1.5)
+        xAG = np.clip(xAG + np.random.normal(0, 0.05), 0, 1.0)
+        prgC = np.clip(prgC + np.random.normal(0, 1.0), 0, 10.0)
+        prgP = np.clip(prgP + np.random.normal(0, 1.0), 0, 10.0)
+        
+        finishing = np.random.normal(1.0, 0.1)
+        final_g_a = (npxG * finishing) + (xAG * finishing)
+        
+        buying_club_tier = np.random.choice(["Elite", "Upper-Mid", "Mid-Table", "Relegation"], p=[0.2, 0.3, 0.3, 0.2])
+        
+        # Label Logic
+        adaptability = np.random.normal(0, 0.1)
+        club_boost = {"Elite": 0.15, "Upper-Mid": 0.05, "Mid-Table": 0.0, "Relegation": -0.1}
+        pl_performance_score = talent + adaptability + club_boost[buying_club_tier]
+        
+        if pl_performance_score >= 0.65: verdict = "Star"
+        elif pl_performance_score >= 0.45: verdict = "Effective"
+        else: verdict = "Flop"
+        
+        age = np.random.randint(18, 30)
+        hype = final_g_a * 30
+        fee = hype + (30-age)*2 + np.random.normal(0, 5)
+        if buying_club_tier == "Elite": fee *= 1.5
+        fee = np.clip(fee, 5, 150)
 
         synthetic_data.append({
             "Name": f"Player_{np.random.randint(10000,99999)}",
-            "Origin_League": league,
+            "Origin_League": league_name,
             "Age": age,
             "Transfer_Fee_M": round(fee, 2),
-            "Pre_PL_G_A_per_90": round(pre_stats, 2),
-            "PL_G_A_per_90": round(pl_stats, 2),
-            "Buying_Club_Tier": buying_tier
+            "G_A_per_90": round(final_g_a, 2),
+            "npxG_per_90": round(npxG, 2),
+            "xAG_per_90": round(xAG, 2),
+            "PrgC_per_90": round(prgC, 2),
+            "PrgP_per_90": round(prgP, 2),
+            "Buying_Club_Tier": buying_club_tier,
+            "PL_Success": verdict,
+            "Season_Control": 2023 # Default for synthetic current-day prospects
         })
+        
+    # Combine
+    combined_data = real_players + synthetic_data
+    df = pd.DataFrame(combined_data)
+    
+    # Fill missing PL_Success for Real Players using the same logic as synthetic
+    # (In a real app, this would be the prediction target, but for training we need labels.
+    #  Here we assume their 'stats' reflect their talent directly for simplicity, or we treat them as 'test' data)
+    
+    def auto_label(row):
+        if row['PL_Success'] != "Unknown": return row['PL_Success']
+        
+        # Heuristic for Real Data labeling (mocking "future" success)
+        # Elite PL players have high stats.
+        score = row['G_A_per_90'] * 0.4 + row['npxG_per_90'] * 0.4 + row['xAG_per_90'] * 0.2
+        if score > 0.6: return "Star"
+        if score > 0.35: return "Effective"
+        return "Flop"
 
-    df = pd.DataFrame(real_players + synthetic_data)
+    df['PL_Success'] = df.apply(auto_label, axis=1)
+    
     return df
 
 if __name__ == "__main__":

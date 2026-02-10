@@ -1,0 +1,29 @@
+// Soccer Analytics Architecture
+digraph {
+	rankdir=LR
+	A [label="Data Sources" fillcolor=lightgrey shape=cylinder style=filled]
+	B [label="Data Processing
+(fetch_history.py)" fillcolor=lightblue shape=rect style=filled]
+	C [label="Transfer Logic Engine
+(process_transfers.py)" fillcolor=lightblue shape=rect style=filled]
+	D [label="Historical Dataset
+(Pl_foreign_transfers.csv)" fillcolor=lightyellow shape=folder style=filled]
+	E [label="Synthetic Data Gen
+(data_generator.py)" fillcolor=lightblue shape=rect style=filled]
+	F [label="Feature Engineering" shape=rect]
+	G [label="Random Forest Model
+(analyze_transfers.py)" fillcolor=gold shape=component style=filled]
+	H [label="Predictions & Viz" fillcolor=lightgreen shape=note style=filled]
+	A -> B [label="Understat
+(10 Years)"]
+	B -> C [label="Raw Season Stats"]
+	C -> D [label="Filtered Transfers
+(Origin -> PL)"]
+	D -> F [label="Real History"]
+	E -> F [label="Synthetic
+(Feeder Leagues)"]
+	F -> G [label="Training Data
+(Features + Labels)"]
+	G -> H [label="Classifications
+(Star/Effective/Flop)"]
+}
